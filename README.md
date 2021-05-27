@@ -1,4 +1,4 @@
-# Java-Integrator-Test
+# Java-Integrator
 
 With the Java-Integrator two simple Java files can be synchronized. The Java-Integrator propagates changes from one file to the other file and vice versa. In the process, conflicts are detected and presented to the developer who then decides how to resolve them.
 
