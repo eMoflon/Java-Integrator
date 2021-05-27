@@ -2,11 +2,11 @@
 
 With the Java-Integrator two simple Java files can be synchronized. The Java-Integrator propagates changes from one file to the other file and vice versa. In the process, conflicts are detected and presented to the developer who then decides how to resolve them.
 
-##[Prerequisite]
+## [Prerequisite]
 
 Install [**eMoflon::IBeX**](https://github.com/eMoflon/emoflon-ibex-updatesite) as explained.
 
-##[Configure]
+## [Configure]
 
 1. The language grammar can be customized in SimpleJava.xtext located in org.xtext.simplejava. Once adjusted, run GenerateSimpleJava.mwe2 located in the same package.
 2. In SimpleJavaValidator in org.xtext.simplejava.validation language constraints can be defined which cannot explicitly be defined in the Xtext grammar, 
@@ -16,7 +16,7 @@ Install [**eMoflon::IBeX**](https://github.com/eMoflon/emoflon-ibex-updatesite) 
 	
 ![Configure](documentation/configure.png)
 
-##[Use] 
+## [Use] 
 
 1. Select the JavaExchangePlugin project folder and run the project as "Launch Runtime Eclipse". A new Eclipse window will open.
 2. Create/open two .simplej files which should be synchronized.
