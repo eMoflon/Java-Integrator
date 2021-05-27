@@ -1,0 +1,37 @@
+#using JavaExchange.*
+#using AttrCondDefLibrary.*
+
+#rule SimpleMethod2SimpleMethodRule #with JavaExchange
+
+#source { 
+	srcClass:SimpleClass{
+		++-simpleMethods->srcMethod
+	}
+	
+	++srcMethod:SimpleMethod
+}
+
+#target {
+	trgClass:SimpleClass{
+		++-simpleMethods->trgMethod
+	}
+	
+	++trgMethod:SimpleMethod
+}
+
+#correspondence {
+	SC2SC:SimpleClass2SimpleClass{
+		#src->srcClass
+		#trg->trgClass
+	}
+	
+	++SM2SM:SimpleMethod2SimpleMethod{
+		#src->srcMethod
+		#trg->trgMethod
+	}
+}
+
+#attributeConditions {
+	eq_string(srcMethod.accessType, trgMethod.accessType)
+	eq_string(srcMethod.name, trgMethod.name)
+}

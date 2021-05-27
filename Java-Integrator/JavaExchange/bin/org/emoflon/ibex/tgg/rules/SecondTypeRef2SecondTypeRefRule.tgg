@@ -1,0 +1,49 @@
+#using JavaExchange.*
+#using AttrCondDefLibrary.*
+
+#rule SecondTypeRef2SecondTypeRefRule #with JavaExchange
+
+#source { 
+	srcRef:JvmParameterizedTypeReference{
+		-type->srcType
+	}
+	
+	srcRef2:JvmParameterizedTypeReference{
+		++-type->srcType
+	}
+	
+	srcType:JvmType
+}
+
+#target {
+	trgRef:JvmParameterizedTypeReference{
+		-type->trgType
+	}
+	
+	trgRef2:JvmParameterizedTypeReference{
+		++-type->trgType
+	}
+	
+	trgType:JvmType
+}
+
+#correspondence {
+	
+	TR2TR:TypeRef2TypeRef{
+		#src->srcRef
+		#trg->trgRef
+	}
+	
+	TR2TR2:TypeRef2TypeRef{
+		#src->srcRef2
+		#trg->trgRef2
+	}
+	
+	T2T:Type2Type{
+		#src->srcType
+		#trg->trgType
+	}
+}
+
+#attributeConditions {	
+}

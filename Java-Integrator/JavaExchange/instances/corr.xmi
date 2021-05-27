@@ -1,0 +1,31 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:JavaExchange="platform:/resource/JavaExchange/model/JavaExchange.ecore" xmlns:types="http://www.eclipse.org/xtext/common/JavaVMTypes">
+  <JavaExchange:SimplePackage2SimplePackage>
+    <source href="/KontaktApplikation/src/kontakt/information/Kontakt.simplej#/0"/>
+    <target href="/KontaktApplikation/src/kontakt/information/Kontakt2.simplej#/0"/>
+  </JavaExchange:SimplePackage2SimplePackage>
+  <JavaExchange:SimpleClass2SimpleClass>
+    <source href="/KontaktApplikation/src/kontakt/information/Kontakt.simplej#/0/@simpleClasses.0"/>
+    <target href="/KontaktApplikation/src/kontakt/information/Kontakt2.simplej#/0/@simpleClasses.0"/>
+  </JavaExchange:SimpleClass2SimpleClass>
+  <JavaExchange:SimpleField2SimpleField>
+    <source href="/KontaktApplikation/src/kontakt/information/Kontakt.simplej#/0/@simpleClasses.0/@simpleFields.1"/>
+    <target href="/KontaktApplikation/src/kontakt/information/Kontakt2.simplej#/0/@simpleClasses.0/@simpleFields.1"/>
+  </JavaExchange:SimpleField2SimpleField>
+  <JavaExchange:TypeRef2TypeRef>
+    <source href="/KontaktApplikation/src/kontakt/information/Kontakt.simplej#/0/@simpleClasses.0/@simpleFields.1/@fieldType"/>
+    <target href="/KontaktApplikation/src/kontakt/information/Kontakt2.simplej#/0/@simpleClasses.0/@simpleFields.1/@fieldType"/>
+  </JavaExchange:TypeRef2TypeRef>
+  <JavaExchange:Type2Type>
+    <source xsi:type="types:JvmGenericType" href="java:/Objects/java.lang.String#java.lang.String"/>
+    <target xsi:type="types:JvmGenericType" href="java:/Objects/java.lang.String#java.lang.String"/>
+  </JavaExchange:Type2Type>
+  <JavaExchange:SimpleField2SimpleField>
+    <source href="/KontaktApplikation/src/kontakt/information/Kontakt.simplej#/0/@simpleClasses.0/@simpleFields.0"/>
+    <target href="/KontaktApplikation/src/kontakt/information/Kontakt2.simplej#/0/@simpleClasses.0/@simpleFields.0"/>
+  </JavaExchange:SimpleField2SimpleField>
+  <JavaExchange:TypeRef2TypeRef>
+    <source href="/KontaktApplikation/src/kontakt/information/Kontakt.simplej#/0/@simpleClasses.0/@simpleFields.0/@fieldType"/>
+    <target href="/KontaktApplikation/src/kontakt/information/Kontakt2.simplej#/0/@simpleClasses.0/@simpleFields.0/@fieldType"/>
+  </JavaExchange:TypeRef2TypeRef>
+</xmi:XMI>

@@ -1,0 +1,98 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<?eclipse version="3.4"?>
+<plugin>
+
+   <extension
+         point="org.eclipse.ui.commands">
+      <category
+            id="JavaExchangePlugin.commands.saveCategory"
+            name="Save Category">
+      </category>
+      <command
+            categoryId="JavaExchangePlugin.commands.saveCategory"
+            name="Save Command"
+            id="JavaExchangePlugin.commands.saveCommand">
+      </command>
+      <category
+            id="JavaExchangePlugin.commands.integrateCategory"
+            name="Integrate Category">
+      </category>
+      <command
+            categoryId="JavaExchangePlugin.commands.integrateCategory"
+            id="JavaExchangePlugin.commands.integrateCommand"
+            name="Integrate Command">
+      </command>
+   </extension>
+   <extension
+         point="org.eclipse.ui.handlers">
+      <handler
+            class="javaexchangeplugin.handlers.SaveHandler"
+            commandId="JavaExchangePlugin.commands.saveCommand">
+      </handler>
+      <handler
+            class="javaexchangeplugin.handlers.IntegrateHandler"
+            commandId="JavaExchangePlugin.commands.integrateCommand">
+      </handler>
+   </extension>
+   <extension
+         point="org.eclipse.ui.bindings">
+      <key
+            commandId="JavaExchangePlugin.commands.saveCommand"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            contextId="org.eclipse.ui.contexts.window"
+            sequence="M1+6">
+      </key>
+      <key
+            commandId="JavaExchangePlugin.commands.integrateCommand"
+            contextId="org.eclipse.ui.contexts.window"
+            schemeId="org.eclipse.ui.defaultAcceleratorConfiguration"
+            sequence="M1+6">
+      </key>
+   </extension>
+   <extension
+         point="org.eclipse.ui.menus">
+      <menuContribution
+            locationURI="menu:org.eclipse.ui.main.menu?after=additions">
+         <menu
+               id="JavaExchangePlugin.menus.saveMenu"
+               label="Java Integration"
+               mnemonic="M">
+            <command
+                  commandId="JavaExchangePlugin.commands.saveCommand"
+                  id="JavaExchangePlugin.menus.saveCommand"
+                  mnemonic="S">
+            </command>
+            <command
+                  commandId="JavaExchangePlugin.commands.integrateCommand"
+                  id="JavaExchangePlugin.menus.integrateCommand"
+                  mnemonic="S">
+            </command>
+         </menu>
+      </menuContribution>
+      <menuContribution
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar
+               id="JavaExchangePlugin.toolbars.saveToolbar">
+            <command
+                  id="JavaExchangePlugin.toolbars.saveCommand"
+                  commandId="JavaExchangePlugin.commands.saveCommand"
+                  icon="icons/save-templates.png"
+                  tooltip="Register Models">
+            </command>
+         </toolbar>
+      </menuContribution>
+      <menuContribution
+            locationURI="toolbar:org.eclipse.ui.main.toolbar?after=additions">
+         <toolbar
+               id="JavaExchangePlugin.toolbars.integrateToolbar">
+            <command
+                  commandId="JavaExchangePlugin.commands.integrateCommand"
+                  icon="icons/integrate.png"
+                  id="JavaExchangePlugin.toolbars.integrateCommand"
+                  tooltip="Integrate Models">
+            </command>
+         </toolbar>
+      </menuContribution>
+   </extension>
+
+</plugin>

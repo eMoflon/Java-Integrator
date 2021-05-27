@@ -1,0 +1,43 @@
+#using JavaExchange.*
+#using AttrCondDefLibrary.*
+
+#rule SimpleField2SimpleFieldRule #with JavaExchange
+
+#source {
+	srcClass:SimpleClass{
+		++-simpleFields -> srcField
+	}
+
+	++srcField:SimpleField
+}
+
+#target {
+	trgClass:SimpleClass{
+		++-simpleFields -> trgField
+	}
+
+	++trgField:SimpleField
+}
+
+#correspondence {
+	SC2SC:SimpleClass2SimpleClass{
+		#src->srcClass
+		#trg->trgClass
+	}
+
+	++SF2SF:SimpleField2SimpleField{
+		#src->srcField
+		#trg->trgField
+	}
+	
+}
+
+#attributeConditions {
+	eq_boolean(srcField.isStatic, trgField.isStatic)
+
+	eq_boolean(srcField.isFinal, trgField.isFinal)
+
+	eq_string(srcField.accessType, trgField.accessType)
+
+	eq_string(srcField.name, trgField.name)
+}

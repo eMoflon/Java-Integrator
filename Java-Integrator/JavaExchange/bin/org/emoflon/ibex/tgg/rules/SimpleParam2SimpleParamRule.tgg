@@ -1,0 +1,36 @@
+#using JavaExchange.*
+#using AttrCondDefLibrary.*
+
+#rule SimpleParam2SimpleParamRule #with JavaExchange
+
+#source { 
+	srcMethod:SimpleMethod{
+		++-params->srcParam
+	}
+	
+	++srcParam:SimpleParam
+}
+
+#target {
+	trgMethod:SimpleMethod{
+		++-params->trgParam
+	}
+	
+	++trgParam:SimpleParam
+}
+
+#correspondence {
+	SM2SM:SimpleMethod2SimpleMethod{
+		#src->srcMethod
+		#trg->trgMethod
+	}
+	
+	++SPa2SPa:SimpleParam2SimpleParam{
+		#src->srcParam
+		#trg->trgParam
+	}
+}
+
+#attributeConditions {
+	eq_string(srcParam.name, trgParam.name)
+}

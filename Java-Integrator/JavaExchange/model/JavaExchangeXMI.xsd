@@ -1,0 +1,301 @@
+<?xml version="1.0" encoding="UTF-8" standalone="no"?>
+<xsd:schema xmlns:JavaExchange="platform:/resource/JavaExchange/model/JavaExchange.ecore" xmlns:org.emoflon.ibex.tgg.runtime="platform:/plugin/org.emoflon.ibex.tgg.runtime/model/Runtime.ecore" xmlns:simpleJava="http://www.xtext.org/simplejava/SimpleJava" xmlns:types="http://www.eclipse.org/xtext/common/JavaVMTypes" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsd="http://www.w3.org/2001/XMLSchema" targetNamespace="platform:/resource/JavaExchange/model/JavaExchange.ecore">
+  <xsd:import namespace="platform:/plugin/org.emoflon.ibex.tgg.runtime/model/Runtime.ecore" schemaLocation="runtime.xsd"/>
+  <xsd:import namespace="http://www.eclipse.org/xtext/common/JavaVMTypes" schemaLocation="types.xsd"/>
+  <xsd:import namespace="http://www.omg.org/XMI" schemaLocation="platform:/plugin/org.eclipse.emf.ecore/model/XMI.xsd"/>
+  <xsd:import namespace="http://www.xtext.org/simplejava/SimpleJava" schemaLocation="simpleJava.xsd"/>
+  <xsd:complexType name="SimplePackage2SimplePackage">
+    <xsd:choice maxOccurs="unbounded" minOccurs="0">
+      <xsd:element name="source" type="simpleJava:SimplePackage"/>
+      <xsd:element name="target" type="simpleJava:SimplePackage"/>
+      <xsd:element ref="xmi:Extension"/>
+    </xsd:choice>
+    <xsd:attribute ref="xmi:id"/>
+    <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+    <xsd:attribute name="source" type="xsd:string"/>
+    <xsd:attribute name="target" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:element name="SimplePackage2SimplePackage" type="JavaExchange:SimplePackage2SimplePackage"/>
+  <xsd:complexType name="SimpleClass2SimpleClass">
+    <xsd:choice maxOccurs="unbounded" minOccurs="0">
+      <xsd:element name="source" type="simpleJava:SimpleClass"/>
+      <xsd:element name="target" type="simpleJava:SimpleClass"/>
+      <xsd:element ref="xmi:Extension"/>
+    </xsd:choice>
+    <xsd:attribute ref="xmi:id"/>
+    <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+    <xsd:attribute name="source" type="xsd:string"/>
+    <xsd:attribute name="target" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:element name="SimpleClass2SimpleClass" type="JavaExchange:SimpleClass2SimpleClass"/>
+  <xsd:complexType name="SimpleField2SimpleField">
+    <xsd:choice maxOccurs="unbounded" minOccurs="0">
+      <xsd:element name="source" type="simpleJava:SimpleField"/>
+      <xsd:element name="target" type="simpleJava:SimpleField"/>
+      <xsd:element ref="xmi:Extension"/>
+    </xsd:choice>
+    <xsd:attribute ref="xmi:id"/>
+    <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+    <xsd:attribute name="source" type="xsd:string"/>
+    <xsd:attribute name="target" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:element name="SimpleField2SimpleField" type="JavaExchange:SimpleField2SimpleField"/>
+  <xsd:complexType name="SimpleMethod2SimpleMethod">
+    <xsd:choice maxOccurs="unbounded" minOccurs="0">
+      <xsd:element name="source" type="simpleJava:SimpleMethod"/>
+      <xsd:element name="target" type="simpleJava:SimpleMethod"/>
+      <xsd:element ref="xmi:Extension"/>
+    </xsd:choice>
+    <xsd:attribute ref="xmi:id"/>
+    <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+    <xsd:attribute name="source" type="xsd:string"/>
+    <xsd:attribute name="target" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:element name="SimpleMethod2SimpleMethod" type="JavaExchange:SimpleMethod2SimpleMethod"/>
+  <xsd:complexType name="SimpleParam2SimpleParam">
+    <xsd:choice maxOccurs="unbounded" minOccurs="0">
+      <xsd:element name="source" type="simpleJava:SimpleParam"/>
+      <xsd:element name="target" type="simpleJava:SimpleParam"/>
+      <xsd:element ref="xmi:Extension"/>
+    </xsd:choice>
+    <xsd:attribute ref="xmi:id"/>
+    <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+    <xsd:attribute name="source" type="xsd:string"/>
+    <xsd:attribute name="target" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:element name="SimpleParam2SimpleParam" type="JavaExchange:SimpleParam2SimpleParam"/>
+  <xsd:complexType name="TypeRef2TypeRef">
+    <xsd:choice maxOccurs="unbounded" minOccurs="0">
+      <xsd:element name="source" type="types:JvmParameterizedTypeReference"/>
+      <xsd:element name="target" type="types:JvmParameterizedTypeReference"/>
+      <xsd:element ref="xmi:Extension"/>
+    </xsd:choice>
+    <xsd:attribute ref="xmi:id"/>
+    <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+    <xsd:attribute name="source" type="xsd:string"/>
+    <xsd:attribute name="target" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:element name="TypeRef2TypeRef" type="JavaExchange:TypeRef2TypeRef"/>
+  <xsd:complexType name="Type2Type">
+    <xsd:choice maxOccurs="unbounded" minOccurs="0">
+      <xsd:element name="source" type="types:JvmType"/>
+      <xsd:element name="target" type="types:JvmType"/>
+      <xsd:element ref="xmi:Extension"/>
+    </xsd:choice>
+    <xsd:attribute ref="xmi:id"/>
+    <xsd:attributeGroup ref="xmi:ObjectAttribs"/>
+    <xsd:attribute name="source" type="xsd:string"/>
+    <xsd:attribute name="target" type="xsd:string"/>
+  </xsd:complexType>
+  <xsd:element name="Type2Type" type="JavaExchange:Type2Type"/>
+  <xsd:complexType name="FieldType2FieldTypeRule__Marker">
+    <xsd:complexContent>
+      <xsd:extension base="org.emoflon.ibex.tgg.runtime:TGGRuleApplication">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="CONTEXT__SRC__srcField" type="simpleJava:SimpleField"/>
+          <xsd:element name="CREATE__SRC__srcRef" type="types:JvmParameterizedTypeReference"/>
+          <xsd:element name="CONTEXT__TRG__trgField" type="simpleJava:SimpleField"/>
+          <xsd:element name="CREATE__TRG__trgRef" type="types:JvmParameterizedTypeReference"/>
+          <xsd:element name="CONTEXT__CORR__SF2SF" type="JavaExchange:SimpleField2SimpleField"/>
+          <xsd:element name="CREATE__CORR__TR2TR" type="JavaExchange:TypeRef2TypeRef"/>
+        </xsd:choice>
+        <xsd:attribute name="CONTEXT__SRC__srcField" type="xsd:string"/>
+        <xsd:attribute name="CREATE__SRC__srcRef" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__TRG__trgField" type="xsd:string"/>
+        <xsd:attribute name="CREATE__TRG__trgRef" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__CORR__SF2SF" type="xsd:string"/>
+        <xsd:attribute name="CREATE__CORR__TR2TR" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="FieldType2FieldTypeRule__Marker" type="JavaExchange:FieldType2FieldTypeRule__Marker"/>
+  <xsd:complexType name="GenericType2GenericTypeRule__Marker">
+    <xsd:complexContent>
+      <xsd:extension base="org.emoflon.ibex.tgg.runtime:TGGRuleApplication">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="CONTEXT__SRC__srcRef" type="types:JvmParameterizedTypeReference"/>
+          <xsd:element name="CREATE__SRC__srcType" type="types:JvmGenericType"/>
+          <xsd:element name="CONTEXT__TRG__trgRef" type="types:JvmParameterizedTypeReference"/>
+          <xsd:element name="CREATE__TRG__trgType" type="types:JvmGenericType"/>
+          <xsd:element name="CONTEXT__CORR__a2a" type="JavaExchange:TypeRef2TypeRef"/>
+          <xsd:element name="CREATE__CORR__b2b" type="JavaExchange:Type2Type"/>
+        </xsd:choice>
+        <xsd:attribute name="CONTEXT__SRC__srcRef" type="xsd:string"/>
+        <xsd:attribute name="CREATE__SRC__srcType" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__TRG__trgRef" type="xsd:string"/>
+        <xsd:attribute name="CREATE__TRG__trgType" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__CORR__a2a" type="xsd:string"/>
+        <xsd:attribute name="CREATE__CORR__b2b" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="GenericType2GenericTypeRule__Marker" type="JavaExchange:GenericType2GenericTypeRule__Marker"/>
+  <xsd:complexType name="ParamType2ParamTypeRule__Marker">
+    <xsd:complexContent>
+      <xsd:extension base="org.emoflon.ibex.tgg.runtime:TGGRuleApplication">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="CONTEXT__SRC__srcParam" type="simpleJava:SimpleParam"/>
+          <xsd:element name="CREATE__SRC__srcRef" type="types:JvmParameterizedTypeReference"/>
+          <xsd:element name="CONTEXT__TRG__trgParam" type="simpleJava:SimpleParam"/>
+          <xsd:element name="CREATE__TRG__trgRef" type="types:JvmParameterizedTypeReference"/>
+          <xsd:element name="CONTEXT__CORR__SPa2SPa" type="JavaExchange:SimpleParam2SimpleParam"/>
+          <xsd:element name="CREATE__CORR__TR2TR" type="JavaExchange:TypeRef2TypeRef"/>
+        </xsd:choice>
+        <xsd:attribute name="CONTEXT__SRC__srcParam" type="xsd:string"/>
+        <xsd:attribute name="CREATE__SRC__srcRef" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__TRG__trgParam" type="xsd:string"/>
+        <xsd:attribute name="CREATE__TRG__trgRef" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__CORR__SPa2SPa" type="xsd:string"/>
+        <xsd:attribute name="CREATE__CORR__TR2TR" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="ParamType2ParamTypeRule__Marker" type="JavaExchange:ParamType2ParamTypeRule__Marker"/>
+  <xsd:complexType name="PrimitiveType2PrimitiveTypeRule__Marker">
+    <xsd:complexContent>
+      <xsd:extension base="org.emoflon.ibex.tgg.runtime:TGGRuleApplication">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="CONTEXT__SRC__srcRef" type="types:JvmParameterizedTypeReference"/>
+          <xsd:element name="CREATE__SRC__srcType" type="types:JvmPrimitiveType"/>
+          <xsd:element name="CONTEXT__TRG__trgRef" type="types:JvmParameterizedTypeReference"/>
+          <xsd:element name="CREATE__TRG__trgType" type="types:JvmPrimitiveType"/>
+          <xsd:element name="CREATE__CORR__T2T" type="JavaExchange:Type2Type"/>
+          <xsd:element name="CONTEXT__CORR__TR2TR" type="JavaExchange:TypeRef2TypeRef"/>
+        </xsd:choice>
+        <xsd:attribute name="CONTEXT__SRC__srcRef" type="xsd:string"/>
+        <xsd:attribute name="CREATE__SRC__srcType" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__TRG__trgRef" type="xsd:string"/>
+        <xsd:attribute name="CREATE__TRG__trgType" type="xsd:string"/>
+        <xsd:attribute name="CREATE__CORR__T2T" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__CORR__TR2TR" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="PrimitiveType2PrimitiveTypeRule__Marker" type="JavaExchange:PrimitiveType2PrimitiveTypeRule__Marker"/>
+  <xsd:complexType name="SecondTypeRef2SecondTypeRefRule__Marker">
+    <xsd:complexContent>
+      <xsd:extension base="org.emoflon.ibex.tgg.runtime:TGGRuleApplication">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="CONTEXT__SRC__srcRef" type="types:JvmParameterizedTypeReference"/>
+          <xsd:element name="CONTEXT__SRC__srcRef2" type="types:JvmParameterizedTypeReference"/>
+          <xsd:element name="CONTEXT__SRC__srcType" type="types:JvmType"/>
+          <xsd:element name="CONTEXT__TRG__trgRef" type="types:JvmParameterizedTypeReference"/>
+          <xsd:element name="CONTEXT__TRG__trgRef2" type="types:JvmParameterizedTypeReference"/>
+          <xsd:element name="CONTEXT__TRG__trgType" type="types:JvmType"/>
+          <xsd:element name="CONTEXT__CORR__T2T" type="JavaExchange:Type2Type"/>
+          <xsd:element name="CONTEXT__CORR__TR2TR" type="JavaExchange:TypeRef2TypeRef"/>
+          <xsd:element name="CONTEXT__CORR__TR2TR2" type="JavaExchange:TypeRef2TypeRef"/>
+        </xsd:choice>
+        <xsd:attribute name="CONTEXT__SRC__srcRef" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__SRC__srcRef2" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__SRC__srcType" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__TRG__trgRef" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__TRG__trgRef2" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__TRG__trgType" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__CORR__T2T" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__CORR__TR2TR" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__CORR__TR2TR2" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="SecondTypeRef2SecondTypeRefRule__Marker" type="JavaExchange:SecondTypeRef2SecondTypeRefRule__Marker"/>
+  <xsd:complexType name="SimpleClass2SimpleClassRule__Marker">
+    <xsd:complexContent>
+      <xsd:extension base="org.emoflon.ibex.tgg.runtime:TGGRuleApplication">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="CREATE__SRC__srcClass" type="simpleJava:SimpleClass"/>
+          <xsd:element name="CONTEXT__SRC__srcPackage" type="simpleJava:SimplePackage"/>
+          <xsd:element name="CREATE__TRG__trgClass" type="simpleJava:SimpleClass"/>
+          <xsd:element name="CONTEXT__TRG__trgPackage" type="simpleJava:SimplePackage"/>
+          <xsd:element name="CREATE__CORR__SC2SC" type="JavaExchange:SimpleClass2SimpleClass"/>
+          <xsd:element name="CONTEXT__CORR__SP2SP" type="JavaExchange:SimplePackage2SimplePackage"/>
+        </xsd:choice>
+        <xsd:attribute name="CREATE__SRC__srcClass" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__SRC__srcPackage" type="xsd:string"/>
+        <xsd:attribute name="CREATE__TRG__trgClass" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__TRG__trgPackage" type="xsd:string"/>
+        <xsd:attribute name="CREATE__CORR__SC2SC" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__CORR__SP2SP" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="SimpleClass2SimpleClassRule__Marker" type="JavaExchange:SimpleClass2SimpleClassRule__Marker"/>
+  <xsd:complexType name="SimpleField2SimpleFieldRule__Marker">
+    <xsd:complexContent>
+      <xsd:extension base="org.emoflon.ibex.tgg.runtime:TGGRuleApplication">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="CONTEXT__SRC__srcClass" type="simpleJava:SimpleClass"/>
+          <xsd:element name="CREATE__SRC__srcField" type="simpleJava:SimpleField"/>
+          <xsd:element name="CONTEXT__TRG__trgClass" type="simpleJava:SimpleClass"/>
+          <xsd:element name="CREATE__TRG__trgField" type="simpleJava:SimpleField"/>
+          <xsd:element name="CONTEXT__CORR__SC2SC" type="JavaExchange:SimpleClass2SimpleClass"/>
+          <xsd:element name="CREATE__CORR__SF2SF" type="JavaExchange:SimpleField2SimpleField"/>
+        </xsd:choice>
+        <xsd:attribute name="CONTEXT__SRC__srcClass" type="xsd:string"/>
+        <xsd:attribute name="CREATE__SRC__srcField" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__TRG__trgClass" type="xsd:string"/>
+        <xsd:attribute name="CREATE__TRG__trgField" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__CORR__SC2SC" type="xsd:string"/>
+        <xsd:attribute name="CREATE__CORR__SF2SF" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="SimpleField2SimpleFieldRule__Marker" type="JavaExchange:SimpleField2SimpleFieldRule__Marker"/>
+  <xsd:complexType name="SimpleMethod2SimpleMethodRule__Marker">
+    <xsd:complexContent>
+      <xsd:extension base="org.emoflon.ibex.tgg.runtime:TGGRuleApplication">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="CONTEXT__SRC__srcClass" type="simpleJava:SimpleClass"/>
+          <xsd:element name="CREATE__SRC__srcMethod" type="simpleJava:SimpleMethod"/>
+          <xsd:element name="CONTEXT__TRG__trgClass" type="simpleJava:SimpleClass"/>
+          <xsd:element name="CREATE__TRG__trgMethod" type="simpleJava:SimpleMethod"/>
+          <xsd:element name="CONTEXT__CORR__SC2SC" type="JavaExchange:SimpleClass2SimpleClass"/>
+          <xsd:element name="CREATE__CORR__SM2SM" type="JavaExchange:SimpleMethod2SimpleMethod"/>
+        </xsd:choice>
+        <xsd:attribute name="CONTEXT__SRC__srcClass" type="xsd:string"/>
+        <xsd:attribute name="CREATE__SRC__srcMethod" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__TRG__trgClass" type="xsd:string"/>
+        <xsd:attribute name="CREATE__TRG__trgMethod" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__CORR__SC2SC" type="xsd:string"/>
+        <xsd:attribute name="CREATE__CORR__SM2SM" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="SimpleMethod2SimpleMethodRule__Marker" type="JavaExchange:SimpleMethod2SimpleMethodRule__Marker"/>
+  <xsd:complexType name="SimplePackage2SimplePackageRule__Marker">
+    <xsd:complexContent>
+      <xsd:extension base="org.emoflon.ibex.tgg.runtime:TGGRuleApplication">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="CREATE__SRC__srcPackage" type="simpleJava:SimplePackage"/>
+          <xsd:element name="CREATE__TRG__trgPackage" type="simpleJava:SimplePackage"/>
+          <xsd:element name="CREATE__CORR__SP2SP" type="JavaExchange:SimplePackage2SimplePackage"/>
+        </xsd:choice>
+        <xsd:attribute name="CREATE__SRC__srcPackage" type="xsd:string"/>
+        <xsd:attribute name="CREATE__TRG__trgPackage" type="xsd:string"/>
+        <xsd:attribute name="CREATE__CORR__SP2SP" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="SimplePackage2SimplePackageRule__Marker" type="JavaExchange:SimplePackage2SimplePackageRule__Marker"/>
+  <xsd:complexType name="SimpleParam2SimpleParamRule__Marker">
+    <xsd:complexContent>
+      <xsd:extension base="org.emoflon.ibex.tgg.runtime:TGGRuleApplication">
+        <xsd:choice maxOccurs="unbounded" minOccurs="0">
+          <xsd:element name="CONTEXT__SRC__srcMethod" type="simpleJava:SimpleMethod"/>
+          <xsd:element name="CREATE__SRC__srcParam" type="simpleJava:SimpleParam"/>
+          <xsd:element name="CONTEXT__TRG__trgMethod" type="simpleJava:SimpleMethod"/>
+          <xsd:element name="CREATE__TRG__trgParam" type="simpleJava:SimpleParam"/>
+          <xsd:element name="CONTEXT__CORR__SM2SM" type="JavaExchange:SimpleMethod2SimpleMethod"/>
+          <xsd:element name="CREATE__CORR__SPa2SPa" type="JavaExchange:SimpleParam2SimpleParam"/>
+        </xsd:choice>
+        <xsd:attribute name="CONTEXT__SRC__srcMethod" type="xsd:string"/>
+        <xsd:attribute name="CREATE__SRC__srcParam" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__TRG__trgMethod" type="xsd:string"/>
+        <xsd:attribute name="CREATE__TRG__trgParam" type="xsd:string"/>
+        <xsd:attribute name="CONTEXT__CORR__SM2SM" type="xsd:string"/>
+        <xsd:attribute name="CREATE__CORR__SPa2SPa" type="xsd:string"/>
+      </xsd:extension>
+    </xsd:complexContent>
+  </xsd:complexType>
+  <xsd:element name="SimpleParam2SimpleParamRule__Marker" type="JavaExchange:SimpleParam2SimpleParamRule__Marker"/>
+</xsd:schema>

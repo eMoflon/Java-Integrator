@@ -1,0 +1,181 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<ecore:EPackage xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance"
+    xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" name="JavaExchange" nsURI="platform:/resource/JavaExchange/model/JavaExchange.ecore"
+    nsPrefix="JavaExchange">
+  <eClassifiers xsi:type="ecore:EClass" name="SimplePackage2SimplePackage">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="ecore:EClass platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimplePackage"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" eType="ecore:EClass platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimplePackage"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SimpleClass2SimpleClass">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="ecore:EClass platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleClass"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" eType="ecore:EClass platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleClass"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SimpleField2SimpleField">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="ecore:EClass platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleField"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" eType="ecore:EClass platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleField"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SimpleMethod2SimpleMethod">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="ecore:EClass platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleMethod"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" eType="ecore:EClass platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleMethod"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SimpleParam2SimpleParam">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="ecore:EClass platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleParam"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" eType="ecore:EClass platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleParam"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="TypeRef2TypeRef">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="ecore:EClass platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmParameterizedTypeReference"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" eType="ecore:EClass platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmParameterizedTypeReference"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="Type2Type">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="source" eType="ecore:EClass platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="target" eType="ecore:EClass platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmType"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="FieldType2FieldTypeRule__Marker" eSuperTypes="platform:/plugin/org.emoflon.ibex.tgg.runtime/model/Runtime.ecore#//TGGRuleApplication">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__SRC__srcField"
+        lowerBound="1" eType="ecore:EClass platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleField"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__SRC__srcRef" lowerBound="1"
+        eType="ecore:EClass platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmParameterizedTypeReference"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__TRG__trgField"
+        lowerBound="1" eType="ecore:EClass platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleField"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__TRG__trgRef" lowerBound="1"
+        eType="ecore:EClass platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmParameterizedTypeReference"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__CORR__SF2SF" lowerBound="1"
+        eType="ecore:EClass platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleField2SimpleField"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__TR2TR" lowerBound="1"
+        eType="ecore:EClass platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="GenericType2GenericTypeRule__Marker"
+      eSuperTypes="platform:/plugin/org.emoflon.ibex.tgg.runtime/model/Runtime.ecore#//TGGRuleApplication">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__SRC__srcRef" lowerBound="1"
+        eType="ecore:EClass platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmParameterizedTypeReference"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__SRC__srcType" lowerBound="1"
+        eType="ecore:EClass platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmGenericType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__TRG__trgRef" lowerBound="1"
+        eType="ecore:EClass platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmParameterizedTypeReference"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__TRG__trgType" lowerBound="1"
+        eType="ecore:EClass platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmGenericType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__CORR__a2a" lowerBound="1"
+        eType="ecore:EClass platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__b2b" lowerBound="1"
+        eType="ecore:EClass platform:/resource/JavaExchange/model/JavaExchange.ecore#//Type2Type"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="ParamType2ParamTypeRule__Marker" eSuperTypes="platform:/plugin/org.emoflon.ibex.tgg.runtime/model/Runtime.ecore#//TGGRuleApplication">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__SRC__srcParam"
+        lowerBound="1" eType="ecore:EClass platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleParam"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__SRC__srcRef" lowerBound="1"
+        eType="ecore:EClass platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmParameterizedTypeReference"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__TRG__trgParam"
+        lowerBound="1" eType="ecore:EClass platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleParam"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__TRG__trgRef" lowerBound="1"
+        eType="ecore:EClass platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmParameterizedTypeReference"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__CORR__SPa2SPa"
+        lowerBound="1" eType="ecore:EClass platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleParam2SimpleParam"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__TR2TR" lowerBound="1"
+        eType="ecore:EClass platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="PrimitiveType2PrimitiveTypeRule__Marker"
+      eSuperTypes="platform:/plugin/org.emoflon.ibex.tgg.runtime/model/Runtime.ecore#//TGGRuleApplication">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__SRC__srcRef" lowerBound="1"
+        eType="ecore:EClass platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmParameterizedTypeReference"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__SRC__srcType" lowerBound="1"
+        eType="ecore:EClass platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmPrimitiveType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__TRG__trgRef" lowerBound="1"
+        eType="ecore:EClass platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmParameterizedTypeReference"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__TRG__trgType" lowerBound="1"
+        eType="ecore:EClass platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmPrimitiveType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__T2T" lowerBound="1"
+        eType="ecore:EClass platform:/resource/JavaExchange/model/JavaExchange.ecore#//Type2Type"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__CORR__TR2TR" lowerBound="1"
+        eType="ecore:EClass platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SecondTypeRef2SecondTypeRefRule__Marker"
+      eSuperTypes="platform:/plugin/org.emoflon.ibex.tgg.runtime/model/Runtime.ecore#//TGGRuleApplication">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__SRC__srcRef" lowerBound="1"
+        eType="ecore:EClass platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmParameterizedTypeReference"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__SRC__srcRef2"
+        lowerBound="1" eType="ecore:EClass platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmParameterizedTypeReference"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__SRC__srcType"
+        lowerBound="1" eType="ecore:EClass platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__TRG__trgRef" lowerBound="1"
+        eType="ecore:EClass platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmParameterizedTypeReference"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__TRG__trgRef2"
+        lowerBound="1" eType="ecore:EClass platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmParameterizedTypeReference"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__TRG__trgType"
+        lowerBound="1" eType="ecore:EClass platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmType"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__CORR__T2T" lowerBound="1"
+        eType="ecore:EClass platform:/resource/JavaExchange/model/JavaExchange.ecore#//Type2Type"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__CORR__TR2TR" lowerBound="1"
+        eType="ecore:EClass platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__CORR__TR2TR2"
+        lowerBound="1" eType="ecore:EClass platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SimpleClass2SimpleClassRule__Marker"
+      eSuperTypes="platform:/plugin/org.emoflon.ibex.tgg.runtime/model/Runtime.ecore#//TGGRuleApplication">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__SRC__srcClass"
+        lowerBound="1" eType="ecore:EClass platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleClass"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__SRC__srcPackage"
+        lowerBound="1" eType="ecore:EClass platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimplePackage"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__TRG__trgClass"
+        lowerBound="1" eType="ecore:EClass platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleClass"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__TRG__trgPackage"
+        lowerBound="1" eType="ecore:EClass platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimplePackage"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__SC2SC" lowerBound="1"
+        eType="ecore:EClass platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleClass2SimpleClass"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__CORR__SP2SP" lowerBound="1"
+        eType="ecore:EClass platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimplePackage2SimplePackage"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SimpleField2SimpleFieldRule__Marker"
+      eSuperTypes="platform:/plugin/org.emoflon.ibex.tgg.runtime/model/Runtime.ecore#//TGGRuleApplication">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__SRC__srcClass"
+        lowerBound="1" eType="ecore:EClass platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleClass"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__SRC__srcField"
+        lowerBound="1" eType="ecore:EClass platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleField"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__TRG__trgClass"
+        lowerBound="1" eType="ecore:EClass platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleClass"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__TRG__trgField"
+        lowerBound="1" eType="ecore:EClass platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleField"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__CORR__SC2SC" lowerBound="1"
+        eType="ecore:EClass platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleClass2SimpleClass"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__SF2SF" lowerBound="1"
+        eType="ecore:EClass platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleField2SimpleField"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SimpleMethod2SimpleMethodRule__Marker"
+      eSuperTypes="platform:/plugin/org.emoflon.ibex.tgg.runtime/model/Runtime.ecore#//TGGRuleApplication">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__SRC__srcClass"
+        lowerBound="1" eType="ecore:EClass platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleClass"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__SRC__srcMethod"
+        lowerBound="1" eType="ecore:EClass platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleMethod"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__TRG__trgClass"
+        lowerBound="1" eType="ecore:EClass platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleClass"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__TRG__trgMethod"
+        lowerBound="1" eType="ecore:EClass platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleMethod"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__CORR__SC2SC" lowerBound="1"
+        eType="ecore:EClass platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleClass2SimpleClass"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__SM2SM" lowerBound="1"
+        eType="ecore:EClass platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleMethod2SimpleMethod"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SimplePackage2SimplePackageRule__Marker"
+      eSuperTypes="platform:/plugin/org.emoflon.ibex.tgg.runtime/model/Runtime.ecore#//TGGRuleApplication">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__SRC__srcPackage"
+        lowerBound="1" eType="ecore:EClass platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimplePackage"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__TRG__trgPackage"
+        lowerBound="1" eType="ecore:EClass platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimplePackage"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__SP2SP" lowerBound="1"
+        eType="ecore:EClass platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimplePackage2SimplePackage"/>
+  </eClassifiers>
+  <eClassifiers xsi:type="ecore:EClass" name="SimpleParam2SimpleParamRule__Marker"
+      eSuperTypes="platform:/plugin/org.emoflon.ibex.tgg.runtime/model/Runtime.ecore#//TGGRuleApplication">
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__SRC__srcMethod"
+        lowerBound="1" eType="ecore:EClass platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleMethod"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__SRC__srcParam"
+        lowerBound="1" eType="ecore:EClass platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleParam"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__TRG__trgMethod"
+        lowerBound="1" eType="ecore:EClass platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleMethod"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__TRG__trgParam"
+        lowerBound="1" eType="ecore:EClass platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleParam"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CONTEXT__CORR__SM2SM" lowerBound="1"
+        eType="ecore:EClass platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleMethod2SimpleMethod"/>
+    <eStructuralFeatures xsi:type="ecore:EReference" name="CREATE__CORR__SPa2SPa"
+        lowerBound="1" eType="ecore:EClass platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleParam2SimpleParam"/>
+  </eClassifiers>
+</ecore:EPackage>

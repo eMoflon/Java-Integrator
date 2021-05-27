@@ -1,0 +1,67 @@
+<?xml version="1.0" encoding="ASCII"?>
+<xmi:XMI xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:JavaExchange="platform:/resource/JavaExchange/model/JavaExchange.ecore" xmlns:types="http://www.eclipse.org/xtext/common/JavaVMTypes">
+  <JavaExchange:SimplePackage2SimplePackageRule__Marker>
+    <CREATE__SRC__srcPackage href="/KontaktApplikation/src/kontakt/information/Kontakt.simplej#/0"/>
+    <CREATE__TRG__trgPackage href="/KontaktApplikation/src/kontakt/information/Kontakt2.simplej#/0"/>
+    <CREATE__CORR__SP2SP href="corr.xmi#/0"/>
+  </JavaExchange:SimplePackage2SimplePackageRule__Marker>
+  <JavaExchange:SimpleClass2SimpleClassRule__Marker>
+    <CREATE__SRC__srcClass href="/KontaktApplikation/src/kontakt/information/Kontakt.simplej#/0/@simpleClasses.0"/>
+    <CONTEXT__SRC__srcPackage href="/KontaktApplikation/src/kontakt/information/Kontakt.simplej#/0"/>
+    <CREATE__TRG__trgClass href="/KontaktApplikation/src/kontakt/information/Kontakt2.simplej#/0/@simpleClasses.0"/>
+    <CONTEXT__TRG__trgPackage href="/KontaktApplikation/src/kontakt/information/Kontakt2.simplej#/0"/>
+    <CREATE__CORR__SC2SC href="corr.xmi#/1"/>
+    <CONTEXT__CORR__SP2SP href="corr.xmi#/0"/>
+  </JavaExchange:SimpleClass2SimpleClassRule__Marker>
+  <JavaExchange:SimpleField2SimpleFieldRule__Marker>
+    <CONTEXT__SRC__srcClass href="/KontaktApplikation/src/kontakt/information/Kontakt.simplej#/0/@simpleClasses.0"/>
+    <CREATE__SRC__srcField href="/KontaktApplikation/src/kontakt/information/Kontakt.simplej#/0/@simpleClasses.0/@simpleFields.1"/>
+    <CONTEXT__TRG__trgClass href="/KontaktApplikation/src/kontakt/information/Kontakt2.simplej#/0/@simpleClasses.0"/>
+    <CREATE__TRG__trgField href="/KontaktApplikation/src/kontakt/information/Kontakt2.simplej#/0/@simpleClasses.0/@simpleFields.1"/>
+    <CONTEXT__CORR__SC2SC href="corr.xmi#/1"/>
+    <CREATE__CORR__SF2SF href="corr.xmi#/2"/>
+  </JavaExchange:SimpleField2SimpleFieldRule__Marker>
+  <JavaExchange:FieldType2FieldTypeRule__Marker>
+    <CONTEXT__SRC__srcField href="/KontaktApplikation/src/kontakt/information/Kontakt.simplej#/0/@simpleClasses.0/@simpleFields.1"/>
+    <CREATE__SRC__srcRef href="/KontaktApplikation/src/kontakt/information/Kontakt.simplej#/0/@simpleClasses.0/@simpleFields.1/@fieldType"/>
+    <CONTEXT__TRG__trgField href="/KontaktApplikation/src/kontakt/information/Kontakt2.simplej#/0/@simpleClasses.0/@simpleFields.1"/>
+    <CREATE__TRG__trgRef href="/KontaktApplikation/src/kontakt/information/Kontakt2.simplej#/0/@simpleClasses.0/@simpleFields.1/@fieldType"/>
+    <CONTEXT__CORR__SF2SF href="corr.xmi#/2"/>
+    <CREATE__CORR__TR2TR href="corr.xmi#/3"/>
+  </JavaExchange:FieldType2FieldTypeRule__Marker>
+  <JavaExchange:GenericType2GenericTypeRule__Marker>
+    <CONTEXT__SRC__srcRef href="/KontaktApplikation/src/kontakt/information/Kontakt.simplej#/0/@simpleClasses.0/@simpleFields.1/@fieldType"/>
+    <CREATE__SRC__srcType href="java:/Objects/java.lang.String#java.lang.String"/>
+    <CONTEXT__TRG__trgRef href="/KontaktApplikation/src/kontakt/information/Kontakt2.simplej#/0/@simpleClasses.0/@simpleFields.1/@fieldType"/>
+    <CREATE__TRG__trgType href="java:/Objects/java.lang.String#java.lang.String"/>
+    <CONTEXT__CORR__a2a href="corr.xmi#/3"/>
+    <CREATE__CORR__b2b href="corr.xmi#/4"/>
+  </JavaExchange:GenericType2GenericTypeRule__Marker>
+  <JavaExchange:SimpleField2SimpleFieldRule__Marker>
+    <CONTEXT__SRC__srcClass href="/KontaktApplikation/src/kontakt/information/Kontakt.simplej#/0/@simpleClasses.0"/>
+    <CREATE__SRC__srcField href="/KontaktApplikation/src/kontakt/information/Kontakt.simplej#/0/@simpleClasses.0/@simpleFields.0"/>
+    <CONTEXT__TRG__trgClass href="/KontaktApplikation/src/kontakt/information/Kontakt2.simplej#/0/@simpleClasses.0"/>
+    <CREATE__TRG__trgField href="/KontaktApplikation/src/kontakt/information/Kontakt2.simplej#/0/@simpleClasses.0/@simpleFields.0"/>
+    <CONTEXT__CORR__SC2SC href="corr.xmi#/1"/>
+    <CREATE__CORR__SF2SF href="corr.xmi#/5"/>
+  </JavaExchange:SimpleField2SimpleFieldRule__Marker>
+  <JavaExchange:FieldType2FieldTypeRule__Marker>
+    <CONTEXT__SRC__srcField href="/KontaktApplikation/src/kontakt/information/Kontakt.simplej#/0/@simpleClasses.0/@simpleFields.0"/>
+    <CREATE__SRC__srcRef href="/KontaktApplikation/src/kontakt/information/Kontakt.simplej#/0/@simpleClasses.0/@simpleFields.0/@fieldType"/>
+    <CONTEXT__TRG__trgField href="/KontaktApplikation/src/kontakt/information/Kontakt2.simplej#/0/@simpleClasses.0/@simpleFields.0"/>
+    <CREATE__TRG__trgRef href="/KontaktApplikation/src/kontakt/information/Kontakt2.simplej#/0/@simpleClasses.0/@simpleFields.0/@fieldType"/>
+    <CONTEXT__CORR__SF2SF href="corr.xmi#/5"/>
+    <CREATE__CORR__TR2TR href="corr.xmi#/6"/>
+  </JavaExchange:FieldType2FieldTypeRule__Marker>
+  <JavaExchange:SecondTypeRef2SecondTypeRefRule__Marker>
+    <CONTEXT__SRC__srcRef href="/KontaktApplikation/src/kontakt/information/Kontakt.simplej#/0/@simpleClasses.0/@simpleFields.1/@fieldType"/>
+    <CONTEXT__SRC__srcRef2 href="/KontaktApplikation/src/kontakt/information/Kontakt.simplej#/0/@simpleClasses.0/@simpleFields.0/@fieldType"/>
+    <CONTEXT__SRC__srcType xsi:type="types:JvmGenericType" href="java:/Objects/java.lang.String#java.lang.String"/>
+    <CONTEXT__TRG__trgRef href="/KontaktApplikation/src/kontakt/information/Kontakt2.simplej#/0/@simpleClasses.0/@simpleFields.1/@fieldType"/>
+    <CONTEXT__TRG__trgRef2 href="/KontaktApplikation/src/kontakt/information/Kontakt2.simplej#/0/@simpleClasses.0/@simpleFields.0/@fieldType"/>
+    <CONTEXT__TRG__trgType xsi:type="types:JvmGenericType" href="java:/Objects/java.lang.String#java.lang.String"/>
+    <CONTEXT__CORR__T2T href="corr.xmi#/4"/>
+    <CONTEXT__CORR__TR2TR href="corr.xmi#/3"/>
+    <CONTEXT__CORR__TR2TR2 href="corr.xmi#/6"/>
+  </JavaExchange:SecondTypeRef2SecondTypeRefRule__Marker>
+</xmi:XMI>

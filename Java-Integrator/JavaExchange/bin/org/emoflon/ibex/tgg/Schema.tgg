@@ -1,0 +1,62 @@
+#import "platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore"
+#import "platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore"
+#import "platform:/plugin/org.eclipse.xtext.xbase/model/XAnnotations.ecore"
+#import "platform:/plugin/org.eclipse.xtext.xbase/model/Xtype.ecore"
+
+#schema JavaExchange
+	
+#source {
+	types
+	simpleJava
+	xtype
+	xAnnotations
+}
+
+#target { 
+	types
+	simpleJava
+	xtype
+	xAnnotations
+} 
+
+#correspondence {
+	
+	SimplePackage2SimplePackage{
+		#src->SimplePackage
+		#trg->SimplePackage
+	}
+	
+	SimpleClass2SimpleClass{
+		#src->SimpleClass
+		#trg->SimpleClass
+	}
+
+	SimpleField2SimpleField{
+		#src->SimpleField
+		#trg->SimpleField
+	}
+	
+	SimpleMethod2SimpleMethod{
+		#src->SimpleMethod
+		#trg->SimpleMethod
+	}
+	
+	SimpleParam2SimpleParam{
+		#src->SimpleParam
+		#trg->SimpleParam
+	}
+	
+	TypeRef2TypeRef{
+		#src->JvmParameterizedTypeReference
+		#trg->JvmParameterizedTypeReference
+	}
+	
+	Type2Type{
+		#src->JvmType
+		#trg->JvmType
+	}
+		
+}
+
+#attributeConditions {
+}

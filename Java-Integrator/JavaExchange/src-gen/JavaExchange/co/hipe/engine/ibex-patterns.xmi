@@ -1,0 +1,510 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<IBeXPatternModel:IBeXModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:IBeXPatternModel="platform:/resource/org.emoflon.ibex.patternmodel/model/IBeXPatternModel.ecore" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore" xsi:schemaLocation="platform:/resource/org.emoflon.ibex.patternmodel/model/IBeXPatternModel.ecore java://org.emoflon.ibex.patternmodel.IBeXPatternModel.IBeXPatternModelPackage http://www.eclipse.org/emf/2002/Ecore java://org.eclipse.emf.ecore.EcorePackage">
+  <patternSet xmi:type="IBeXPatternModel:IBeXPatternSet">
+    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="FieldType2FieldTypeRule__CO" localEdges="//@edgeSet/@edges.6 //@edgeSet/@edges.8 //@edgeSet/@edges.26 //@edgeSet/@edges.30 //@edgeSet/@edges.42 //@edgeSet/@edges.52" signatureNodes="//@nodeSet/@nodes.3 //@nodeSet/@nodes.23 //@nodeSet/@nodes.43 //@nodeSet/@nodes.13 //@nodeSet/@nodes.31 //@nodeSet/@nodes.51">
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXInjectivityConstraint" values="//@nodeSet/@nodes.23 //@nodeSet/@nodes.43"/>
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXInjectivityConstraint" values="//@nodeSet/@nodes.31 //@nodeSet/@nodes.51"/>
+    </contextPatterns>
+    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="GenericType2GenericTypeRule__CO" localEdges="//@edgeSet/@edges.36 //@edgeSet/@edges.37 //@edgeSet/@edges.38 //@edgeSet/@edges.39 //@edgeSet/@edges.46 //@edgeSet/@edges.56" signatureNodes="//@nodeSet/@nodes.18 //@nodeSet/@nodes.32 //@nodeSet/@nodes.52 //@nodeSet/@nodes.19 //@nodeSet/@nodes.37 //@nodeSet/@nodes.57">
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXInjectivityConstraint" values="//@nodeSet/@nodes.32 //@nodeSet/@nodes.52"/>
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXInjectivityConstraint" values="//@nodeSet/@nodes.37 //@nodeSet/@nodes.57"/>
+      <csps xmi:type="IBeXPatternModel:IBeXCSP" name="eq_string" package="org.emoflon.ibex.tgg.operational.csp.constraints">
+        <values xmi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.37">
+          <attribute xmi:type="ecore:EAttribute" href="http://www.eclipse.org/xtext/common/JavaVMTypes#//JvmDeclaredType/packageName"/>
+        </values>
+        <values xmi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.57">
+          <attribute xmi:type="ecore:EAttribute" href="http://www.eclipse.org/xtext/common/JavaVMTypes#//JvmDeclaredType/packageName"/>
+        </values>
+      </csps>
+      <csps xmi:type="IBeXPatternModel:IBeXCSP" name="eq_string" package="org.emoflon.ibex.tgg.operational.csp.constraints">
+        <values xmi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.37">
+          <attribute xmi:type="ecore:EAttribute" href="http://www.eclipse.org/xtext/common/JavaVMTypes#//JvmMember/simpleName"/>
+        </values>
+        <values xmi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.57">
+          <attribute xmi:type="ecore:EAttribute" href="http://www.eclipse.org/xtext/common/JavaVMTypes#//JvmMember/simpleName"/>
+        </values>
+      </csps>
+    </contextPatterns>
+    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="ParamType2ParamTypeRule__CO" localEdges="//@edgeSet/@edges.18 //@edgeSet/@edges.20 //@edgeSet/@edges.27 //@edgeSet/@edges.31 //@edgeSet/@edges.45 //@edgeSet/@edges.55" signatureNodes="//@nodeSet/@nodes.9 //@nodeSet/@nodes.29 //@nodeSet/@nodes.49 //@nodeSet/@nodes.14 //@nodeSet/@nodes.33 //@nodeSet/@nodes.53">
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXInjectivityConstraint" values="//@nodeSet/@nodes.29 //@nodeSet/@nodes.49"/>
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXInjectivityConstraint" values="//@nodeSet/@nodes.33 //@nodeSet/@nodes.53"/>
+    </contextPatterns>
+    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="PrimitiveType2PrimitiveTypeRule__CO" localEdges="//@edgeSet/@edges.28 //@edgeSet/@edges.32 //@edgeSet/@edges.22 //@edgeSet/@edges.24 //@edgeSet/@edges.47 //@edgeSet/@edges.57" signatureNodes="//@nodeSet/@nodes.15 //@nodeSet/@nodes.34 //@nodeSet/@nodes.54 //@nodeSet/@nodes.11 //@nodeSet/@nodes.38 //@nodeSet/@nodes.58">
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXInjectivityConstraint" values="//@nodeSet/@nodes.34 //@nodeSet/@nodes.54"/>
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXInjectivityConstraint" values="//@nodeSet/@nodes.38 //@nodeSet/@nodes.58"/>
+      <csps xmi:type="IBeXPatternModel:IBeXCSP" name="eq_string" package="org.emoflon.ibex.tgg.operational.csp.constraints">
+        <values xmi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.38">
+          <attribute xmi:type="ecore:EAttribute" href="http://www.eclipse.org/xtext/common/JavaVMTypes#//JvmPrimitiveType/simpleName"/>
+        </values>
+        <values xmi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.58">
+          <attribute xmi:type="ecore:EAttribute" href="http://www.eclipse.org/xtext/common/JavaVMTypes#//JvmPrimitiveType/simpleName"/>
+        </values>
+      </csps>
+    </contextPatterns>
+    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="SecondTypeRef2SecondTypeRefRule__CO" localEdges="//@edgeSet/@edges.23 //@edgeSet/@edges.25 //@edgeSet/@edges.34 //@edgeSet/@edges.35 //@edgeSet/@edges.29 //@edgeSet/@edges.33 //@edgeSet/@edges.48 //@edgeSet/@edges.58 //@edgeSet/@edges.49 //@edgeSet/@edges.59" signatureNodes="//@nodeSet/@nodes.12 //@nodeSet/@nodes.16 //@nodeSet/@nodes.17 //@nodeSet/@nodes.35 //@nodeSet/@nodes.36 //@nodeSet/@nodes.39 //@nodeSet/@nodes.55 //@nodeSet/@nodes.56 //@nodeSet/@nodes.59">
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXInjectivityConstraint" values="//@nodeSet/@nodes.35 //@nodeSet/@nodes.36"/>
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXInjectivityConstraint" values="//@nodeSet/@nodes.35 //@nodeSet/@nodes.55"/>
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXInjectivityConstraint" values="//@nodeSet/@nodes.35 //@nodeSet/@nodes.56"/>
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXInjectivityConstraint" values="//@nodeSet/@nodes.36 //@nodeSet/@nodes.55"/>
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXInjectivityConstraint" values="//@nodeSet/@nodes.36 //@nodeSet/@nodes.56"/>
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXInjectivityConstraint" values="//@nodeSet/@nodes.39 //@nodeSet/@nodes.59"/>
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXInjectivityConstraint" values="//@nodeSet/@nodes.55 //@nodeSet/@nodes.56"/>
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXInjectivityConstraint" values="//@nodeSet/@nodes.16 //@nodeSet/@nodes.17"/>
+    </contextPatterns>
+    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="SimpleClass2SimpleClassRule__CO" localEdges="//@edgeSet/@edges.14 //@edgeSet/@edges.16 //@edgeSet/@edges.0 //@edgeSet/@edges.3 //@edgeSet/@edges.44 //@edgeSet/@edges.54" signatureNodes="//@nodeSet/@nodes.7 //@nodeSet/@nodes.27 //@nodeSet/@nodes.47 //@nodeSet/@nodes.0 //@nodeSet/@nodes.20 //@nodeSet/@nodes.40">
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXInjectivityConstraint" values="//@nodeSet/@nodes.20 //@nodeSet/@nodes.40"/>
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXInjectivityConstraint" values="//@nodeSet/@nodes.27 //@nodeSet/@nodes.47"/>
+      <csps xmi:type="IBeXPatternModel:IBeXCSP" name="eq_string" package="org.emoflon.ibex.tgg.operational.csp.constraints">
+        <values xmi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.20">
+          <attribute xmi:type="ecore:EAttribute" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleClass/name"/>
+        </values>
+        <values xmi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.40">
+          <attribute xmi:type="ecore:EAttribute" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleClass/name"/>
+        </values>
+      </csps>
+    </contextPatterns>
+    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="SimpleField2SimpleFieldRule__CO" localEdges="//@edgeSet/@edges.1 //@edgeSet/@edges.4 //@edgeSet/@edges.7 //@edgeSet/@edges.9 //@edgeSet/@edges.40 //@edgeSet/@edges.50" signatureNodes="//@nodeSet/@nodes.1 //@nodeSet/@nodes.21 //@nodeSet/@nodes.41 //@nodeSet/@nodes.4 //@nodeSet/@nodes.24 //@nodeSet/@nodes.44">
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXInjectivityConstraint" values="//@nodeSet/@nodes.21 //@nodeSet/@nodes.41"/>
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXInjectivityConstraint" values="//@nodeSet/@nodes.24 //@nodeSet/@nodes.44"/>
+      <csps xmi:type="IBeXPatternModel:IBeXCSP" name="eq_boolean" package="org.emoflon.ibex.tgg.operational.csp.constraints">
+        <values xmi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.24">
+          <attribute xmi:type="ecore:EAttribute" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleField/isStatic"/>
+        </values>
+        <values xmi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.44">
+          <attribute xmi:type="ecore:EAttribute" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleField/isStatic"/>
+        </values>
+      </csps>
+      <csps xmi:type="IBeXPatternModel:IBeXCSP" name="eq_boolean" package="org.emoflon.ibex.tgg.operational.csp.constraints">
+        <values xmi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.24">
+          <attribute xmi:type="ecore:EAttribute" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleField/isFinal"/>
+        </values>
+        <values xmi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.44">
+          <attribute xmi:type="ecore:EAttribute" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleField/isFinal"/>
+        </values>
+      </csps>
+      <csps xmi:type="IBeXPatternModel:IBeXCSP" name="eq_string" package="org.emoflon.ibex.tgg.operational.csp.constraints">
+        <values xmi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.24">
+          <attribute xmi:type="ecore:EAttribute" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleField/accessType"/>
+        </values>
+        <values xmi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.44">
+          <attribute xmi:type="ecore:EAttribute" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleField/accessType"/>
+        </values>
+      </csps>
+      <csps xmi:type="IBeXPatternModel:IBeXCSP" name="eq_string" package="org.emoflon.ibex.tgg.operational.csp.constraints">
+        <values xmi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.24">
+          <attribute xmi:type="ecore:EAttribute" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleField/name"/>
+        </values>
+        <values xmi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.44">
+          <attribute xmi:type="ecore:EAttribute" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleField/name"/>
+        </values>
+      </csps>
+    </contextPatterns>
+    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="SimpleMethod2SimpleMethodRule__CO" localEdges="//@edgeSet/@edges.2 //@edgeSet/@edges.5 //@edgeSet/@edges.10 //@edgeSet/@edges.12 //@edgeSet/@edges.41 //@edgeSet/@edges.51" signatureNodes="//@nodeSet/@nodes.2 //@nodeSet/@nodes.22 //@nodeSet/@nodes.42 //@nodeSet/@nodes.5 //@nodeSet/@nodes.25 //@nodeSet/@nodes.45">
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXInjectivityConstraint" values="//@nodeSet/@nodes.22 //@nodeSet/@nodes.42"/>
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXInjectivityConstraint" values="//@nodeSet/@nodes.25 //@nodeSet/@nodes.45"/>
+      <csps xmi:type="IBeXPatternModel:IBeXCSP" name="eq_string" package="org.emoflon.ibex.tgg.operational.csp.constraints">
+        <values xmi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.25">
+          <attribute xmi:type="ecore:EAttribute" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleMethod/accessType"/>
+        </values>
+        <values xmi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.45">
+          <attribute xmi:type="ecore:EAttribute" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleMethod/accessType"/>
+        </values>
+      </csps>
+      <csps xmi:type="IBeXPatternModel:IBeXCSP" name="eq_string" package="org.emoflon.ibex.tgg.operational.csp.constraints">
+        <values xmi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.25">
+          <attribute xmi:type="ecore:EAttribute" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleMethod/name"/>
+        </values>
+        <values xmi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.45">
+          <attribute xmi:type="ecore:EAttribute" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleMethod/name"/>
+        </values>
+      </csps>
+    </contextPatterns>
+    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="SimplePackage2SimplePackageRule__CO" localEdges="//@edgeSet/@edges.15 //@edgeSet/@edges.17" signatureNodes="//@nodeSet/@nodes.8 //@nodeSet/@nodes.28 //@nodeSet/@nodes.48">
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXInjectivityConstraint" values="//@nodeSet/@nodes.28 //@nodeSet/@nodes.48"/>
+      <csps xmi:type="IBeXPatternModel:IBeXCSP" name="eq_string" package="org.emoflon.ibex.tgg.operational.csp.constraints">
+        <values xmi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.28">
+          <attribute xmi:type="ecore:EAttribute" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimplePackage/name"/>
+        </values>
+        <values xmi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.48">
+          <attribute xmi:type="ecore:EAttribute" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimplePackage/name"/>
+        </values>
+      </csps>
+    </contextPatterns>
+    <contextPatterns xmi:type="IBeXPatternModel:IBeXContextPattern" name="SimpleParam2SimpleParamRule__CO" localEdges="//@edgeSet/@edges.11 //@edgeSet/@edges.13 //@edgeSet/@edges.19 //@edgeSet/@edges.21 //@edgeSet/@edges.43 //@edgeSet/@edges.53" signatureNodes="//@nodeSet/@nodes.6 //@nodeSet/@nodes.26 //@nodeSet/@nodes.46 //@nodeSet/@nodes.10 //@nodeSet/@nodes.30 //@nodeSet/@nodes.50">
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXInjectivityConstraint" values="//@nodeSet/@nodes.26 //@nodeSet/@nodes.46"/>
+      <injectivityConstraints xmi:type="IBeXPatternModel:IBeXInjectivityConstraint" values="//@nodeSet/@nodes.30 //@nodeSet/@nodes.50"/>
+      <csps xmi:type="IBeXPatternModel:IBeXCSP" name="eq_string" package="org.emoflon.ibex.tgg.operational.csp.constraints">
+        <values xmi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.30">
+          <attribute xmi:type="ecore:EAttribute" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleParam/name"/>
+        </values>
+        <values xmi:type="IBeXPatternModel:IBeXAttributeExpression" node="//@nodeSet/@nodes.50">
+          <attribute xmi:type="ecore:EAttribute" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleParam/name"/>
+        </values>
+      </csps>
+    </contextPatterns>
+  </patternSet>
+  <nodeSet xmi:type="IBeXPatternModel:IBeXNodeSet">
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="SC2SC" outgoingEdges="//@edgeSet/@edges.0 //@edgeSet/@edges.3">
+      <type xmi:type="ecore:EClass" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleClass2SimpleClass"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="SC2SC" outgoingEdges="//@edgeSet/@edges.1 //@edgeSet/@edges.4">
+      <type xmi:type="ecore:EClass" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleClass2SimpleClass"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="SC2SC" outgoingEdges="//@edgeSet/@edges.2 //@edgeSet/@edges.5">
+      <type xmi:type="ecore:EClass" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleClass2SimpleClass"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="SF2SF" outgoingEdges="//@edgeSet/@edges.6 //@edgeSet/@edges.8">
+      <type xmi:type="ecore:EClass" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleField2SimpleField"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="SF2SF" outgoingEdges="//@edgeSet/@edges.7 //@edgeSet/@edges.9">
+      <type xmi:type="ecore:EClass" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleField2SimpleField"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="SM2SM" outgoingEdges="//@edgeSet/@edges.10 //@edgeSet/@edges.12">
+      <type xmi:type="ecore:EClass" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleMethod2SimpleMethod"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="SM2SM" outgoingEdges="//@edgeSet/@edges.11 //@edgeSet/@edges.13">
+      <type xmi:type="ecore:EClass" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleMethod2SimpleMethod"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="SP2SP" outgoingEdges="//@edgeSet/@edges.14 //@edgeSet/@edges.16">
+      <type xmi:type="ecore:EClass" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimplePackage2SimplePackage"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="SP2SP" outgoingEdges="//@edgeSet/@edges.15 //@edgeSet/@edges.17">
+      <type xmi:type="ecore:EClass" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimplePackage2SimplePackage"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="SPa2SPa" outgoingEdges="//@edgeSet/@edges.18 //@edgeSet/@edges.20">
+      <type xmi:type="ecore:EClass" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleParam2SimpleParam"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="SPa2SPa" outgoingEdges="//@edgeSet/@edges.19 //@edgeSet/@edges.21">
+      <type xmi:type="ecore:EClass" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleParam2SimpleParam"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="T2T" outgoingEdges="//@edgeSet/@edges.22 //@edgeSet/@edges.24">
+      <type xmi:type="ecore:EClass" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//Type2Type"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="T2T" outgoingEdges="//@edgeSet/@edges.23 //@edgeSet/@edges.25">
+      <type xmi:type="ecore:EClass" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//Type2Type"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="TR2TR" outgoingEdges="//@edgeSet/@edges.26 //@edgeSet/@edges.30">
+      <type xmi:type="ecore:EClass" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="TR2TR" outgoingEdges="//@edgeSet/@edges.27 //@edgeSet/@edges.31">
+      <type xmi:type="ecore:EClass" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="TR2TR" outgoingEdges="//@edgeSet/@edges.28 //@edgeSet/@edges.32">
+      <type xmi:type="ecore:EClass" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="TR2TR" outgoingEdges="//@edgeSet/@edges.29 //@edgeSet/@edges.33">
+      <type xmi:type="ecore:EClass" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="TR2TR2" outgoingEdges="//@edgeSet/@edges.34 //@edgeSet/@edges.35">
+      <type xmi:type="ecore:EClass" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="a2a" outgoingEdges="//@edgeSet/@edges.36 //@edgeSet/@edges.37">
+      <type xmi:type="ecore:EClass" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="b2b" outgoingEdges="//@edgeSet/@edges.38 //@edgeSet/@edges.39">
+      <type xmi:type="ecore:EClass" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//Type2Type"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="srcClass" incomingEdges="//@edgeSet/@edges.0 //@edgeSet/@edges.44">
+      <type xmi:type="ecore:EClass" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleClass"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="srcClass" incomingEdges="//@edgeSet/@edges.1" outgoingEdges="//@edgeSet/@edges.40">
+      <type xmi:type="ecore:EClass" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleClass"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="srcClass" incomingEdges="//@edgeSet/@edges.2" outgoingEdges="//@edgeSet/@edges.41">
+      <type xmi:type="ecore:EClass" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleClass"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="srcField" incomingEdges="//@edgeSet/@edges.6" outgoingEdges="//@edgeSet/@edges.42">
+      <type xmi:type="ecore:EClass" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleField"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="srcField" incomingEdges="//@edgeSet/@edges.7 //@edgeSet/@edges.40">
+      <type xmi:type="ecore:EClass" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleField"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="srcMethod" incomingEdges="//@edgeSet/@edges.10 //@edgeSet/@edges.41">
+      <type xmi:type="ecore:EClass" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleMethod"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="srcMethod" incomingEdges="//@edgeSet/@edges.11" outgoingEdges="//@edgeSet/@edges.43">
+      <type xmi:type="ecore:EClass" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleMethod"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="srcPackage" incomingEdges="//@edgeSet/@edges.14" outgoingEdges="//@edgeSet/@edges.44">
+      <type xmi:type="ecore:EClass" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimplePackage"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="srcPackage" incomingEdges="//@edgeSet/@edges.15">
+      <type xmi:type="ecore:EClass" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimplePackage"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="srcParam" incomingEdges="//@edgeSet/@edges.18" outgoingEdges="//@edgeSet/@edges.45">
+      <type xmi:type="ecore:EClass" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleParam"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="srcParam" incomingEdges="//@edgeSet/@edges.19 //@edgeSet/@edges.43">
+      <type xmi:type="ecore:EClass" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleParam"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="srcRef" incomingEdges="//@edgeSet/@edges.26 //@edgeSet/@edges.42">
+      <type xmi:type="ecore:EClass" href="http://www.eclipse.org/xtext/common/JavaVMTypes#//JvmParameterizedTypeReference"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="srcRef" incomingEdges="//@edgeSet/@edges.36" outgoingEdges="//@edgeSet/@edges.46">
+      <type xmi:type="ecore:EClass" href="http://www.eclipse.org/xtext/common/JavaVMTypes#//JvmParameterizedTypeReference"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="srcRef" incomingEdges="//@edgeSet/@edges.27 //@edgeSet/@edges.45">
+      <type xmi:type="ecore:EClass" href="http://www.eclipse.org/xtext/common/JavaVMTypes#//JvmParameterizedTypeReference"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="srcRef" incomingEdges="//@edgeSet/@edges.28" outgoingEdges="//@edgeSet/@edges.47">
+      <type xmi:type="ecore:EClass" href="http://www.eclipse.org/xtext/common/JavaVMTypes#//JvmParameterizedTypeReference"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="srcRef" incomingEdges="//@edgeSet/@edges.29" outgoingEdges="//@edgeSet/@edges.48">
+      <type xmi:type="ecore:EClass" href="http://www.eclipse.org/xtext/common/JavaVMTypes#//JvmParameterizedTypeReference"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="srcRef2" incomingEdges="//@edgeSet/@edges.34" outgoingEdges="//@edgeSet/@edges.49">
+      <type xmi:type="ecore:EClass" href="http://www.eclipse.org/xtext/common/JavaVMTypes#//JvmParameterizedTypeReference"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="srcType" incomingEdges="//@edgeSet/@edges.38 //@edgeSet/@edges.46">
+      <type xmi:type="ecore:EClass" href="http://www.eclipse.org/xtext/common/JavaVMTypes#//JvmGenericType"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="srcType" incomingEdges="//@edgeSet/@edges.22 //@edgeSet/@edges.47">
+      <type xmi:type="ecore:EClass" href="http://www.eclipse.org/xtext/common/JavaVMTypes#//JvmPrimitiveType"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="srcType" incomingEdges="//@edgeSet/@edges.23 //@edgeSet/@edges.48 //@edgeSet/@edges.49">
+      <type xmi:type="ecore:EClass" href="http://www.eclipse.org/xtext/common/JavaVMTypes#//JvmType"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="trgClass" incomingEdges="//@edgeSet/@edges.3 //@edgeSet/@edges.54">
+      <type xmi:type="ecore:EClass" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleClass"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="trgClass" incomingEdges="//@edgeSet/@edges.4" outgoingEdges="//@edgeSet/@edges.50">
+      <type xmi:type="ecore:EClass" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleClass"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="trgClass" incomingEdges="//@edgeSet/@edges.5" outgoingEdges="//@edgeSet/@edges.51">
+      <type xmi:type="ecore:EClass" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleClass"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="trgField" incomingEdges="//@edgeSet/@edges.8" outgoingEdges="//@edgeSet/@edges.52">
+      <type xmi:type="ecore:EClass" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleField"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="trgField" incomingEdges="//@edgeSet/@edges.9 //@edgeSet/@edges.50">
+      <type xmi:type="ecore:EClass" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleField"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="trgMethod" incomingEdges="//@edgeSet/@edges.12 //@edgeSet/@edges.51">
+      <type xmi:type="ecore:EClass" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleMethod"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="trgMethod" incomingEdges="//@edgeSet/@edges.13" outgoingEdges="//@edgeSet/@edges.53">
+      <type xmi:type="ecore:EClass" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleMethod"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="trgPackage" incomingEdges="//@edgeSet/@edges.16" outgoingEdges="//@edgeSet/@edges.54">
+      <type xmi:type="ecore:EClass" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimplePackage"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="trgPackage" incomingEdges="//@edgeSet/@edges.17">
+      <type xmi:type="ecore:EClass" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimplePackage"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="trgParam" incomingEdges="//@edgeSet/@edges.20" outgoingEdges="//@edgeSet/@edges.55">
+      <type xmi:type="ecore:EClass" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleParam"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="trgParam" incomingEdges="//@edgeSet/@edges.21 //@edgeSet/@edges.53">
+      <type xmi:type="ecore:EClass" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleParam"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="trgRef" incomingEdges="//@edgeSet/@edges.30 //@edgeSet/@edges.52">
+      <type xmi:type="ecore:EClass" href="http://www.eclipse.org/xtext/common/JavaVMTypes#//JvmParameterizedTypeReference"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="trgRef" incomingEdges="//@edgeSet/@edges.37" outgoingEdges="//@edgeSet/@edges.56">
+      <type xmi:type="ecore:EClass" href="http://www.eclipse.org/xtext/common/JavaVMTypes#//JvmParameterizedTypeReference"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="trgRef" incomingEdges="//@edgeSet/@edges.31 //@edgeSet/@edges.55">
+      <type xmi:type="ecore:EClass" href="http://www.eclipse.org/xtext/common/JavaVMTypes#//JvmParameterizedTypeReference"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="trgRef" incomingEdges="//@edgeSet/@edges.32" outgoingEdges="//@edgeSet/@edges.57">
+      <type xmi:type="ecore:EClass" href="http://www.eclipse.org/xtext/common/JavaVMTypes#//JvmParameterizedTypeReference"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="trgRef" incomingEdges="//@edgeSet/@edges.33" outgoingEdges="//@edgeSet/@edges.58">
+      <type xmi:type="ecore:EClass" href="http://www.eclipse.org/xtext/common/JavaVMTypes#//JvmParameterizedTypeReference"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="trgRef2" incomingEdges="//@edgeSet/@edges.35" outgoingEdges="//@edgeSet/@edges.59">
+      <type xmi:type="ecore:EClass" href="http://www.eclipse.org/xtext/common/JavaVMTypes#//JvmParameterizedTypeReference"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="trgType" incomingEdges="//@edgeSet/@edges.39 //@edgeSet/@edges.56">
+      <type xmi:type="ecore:EClass" href="http://www.eclipse.org/xtext/common/JavaVMTypes#//JvmGenericType"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="trgType" incomingEdges="//@edgeSet/@edges.24 //@edgeSet/@edges.57">
+      <type xmi:type="ecore:EClass" href="http://www.eclipse.org/xtext/common/JavaVMTypes#//JvmPrimitiveType"/>
+    </nodes>
+    <nodes xmi:type="IBeXPatternModel:IBeXNode" name="trgType" incomingEdges="//@edgeSet/@edges.25 //@edgeSet/@edges.58 //@edgeSet/@edges.59">
+      <type xmi:type="ecore:EClass" href="http://www.eclipse.org/xtext/common/JavaVMTypes#//JvmType"/>
+    </nodes>
+  </nodeSet>
+  <edgeSet xmi:type="IBeXPatternModel:IBeXEdgeSet">
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="SC2SC->srcClass" sourceNode="//@nodeSet/@nodes.0" targetNode="//@nodeSet/@nodes.20">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleClass2SimpleClass/source"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="SC2SC->srcClass" sourceNode="//@nodeSet/@nodes.1" targetNode="//@nodeSet/@nodes.21">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleClass2SimpleClass/source"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="SC2SC->srcClass" sourceNode="//@nodeSet/@nodes.2" targetNode="//@nodeSet/@nodes.22">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleClass2SimpleClass/source"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="SC2SC->trgClass" sourceNode="//@nodeSet/@nodes.0" targetNode="//@nodeSet/@nodes.40">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleClass2SimpleClass/target"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="SC2SC->trgClass" sourceNode="//@nodeSet/@nodes.1" targetNode="//@nodeSet/@nodes.41">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleClass2SimpleClass/target"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="SC2SC->trgClass" sourceNode="//@nodeSet/@nodes.2" targetNode="//@nodeSet/@nodes.42">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleClass2SimpleClass/target"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="SF2SF->srcField" sourceNode="//@nodeSet/@nodes.3" targetNode="//@nodeSet/@nodes.23">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleField2SimpleField/source"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="SF2SF->srcField" sourceNode="//@nodeSet/@nodes.4" targetNode="//@nodeSet/@nodes.24">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleField2SimpleField/source"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="SF2SF->trgField" sourceNode="//@nodeSet/@nodes.3" targetNode="//@nodeSet/@nodes.43">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleField2SimpleField/target"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="SF2SF->trgField" sourceNode="//@nodeSet/@nodes.4" targetNode="//@nodeSet/@nodes.44">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleField2SimpleField/target"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="SM2SM->srcMethod" sourceNode="//@nodeSet/@nodes.5" targetNode="//@nodeSet/@nodes.25">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleMethod2SimpleMethod/source"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="SM2SM->srcMethod" sourceNode="//@nodeSet/@nodes.6" targetNode="//@nodeSet/@nodes.26">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleMethod2SimpleMethod/source"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="SM2SM->trgMethod" sourceNode="//@nodeSet/@nodes.5" targetNode="//@nodeSet/@nodes.45">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleMethod2SimpleMethod/target"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="SM2SM->trgMethod" sourceNode="//@nodeSet/@nodes.6" targetNode="//@nodeSet/@nodes.46">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleMethod2SimpleMethod/target"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="SP2SP->srcPackage" sourceNode="//@nodeSet/@nodes.7" targetNode="//@nodeSet/@nodes.27">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimplePackage2SimplePackage/source"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="SP2SP->srcPackage" sourceNode="//@nodeSet/@nodes.8" targetNode="//@nodeSet/@nodes.28">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimplePackage2SimplePackage/source"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="SP2SP->trgPackage" sourceNode="//@nodeSet/@nodes.7" targetNode="//@nodeSet/@nodes.47">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimplePackage2SimplePackage/target"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="SP2SP->trgPackage" sourceNode="//@nodeSet/@nodes.8" targetNode="//@nodeSet/@nodes.48">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimplePackage2SimplePackage/target"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="SPa2SPa->srcParam" sourceNode="//@nodeSet/@nodes.9" targetNode="//@nodeSet/@nodes.29">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleParam2SimpleParam/source"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="SPa2SPa->srcParam" sourceNode="//@nodeSet/@nodes.10" targetNode="//@nodeSet/@nodes.30">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleParam2SimpleParam/source"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="SPa2SPa->trgParam" sourceNode="//@nodeSet/@nodes.9" targetNode="//@nodeSet/@nodes.49">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleParam2SimpleParam/target"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="SPa2SPa->trgParam" sourceNode="//@nodeSet/@nodes.10" targetNode="//@nodeSet/@nodes.50">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleParam2SimpleParam/target"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="T2T->srcType" sourceNode="//@nodeSet/@nodes.11" targetNode="//@nodeSet/@nodes.38">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//Type2Type/source"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="T2T->srcType" sourceNode="//@nodeSet/@nodes.12" targetNode="//@nodeSet/@nodes.39">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//Type2Type/source"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="T2T->trgType" sourceNode="//@nodeSet/@nodes.11" targetNode="//@nodeSet/@nodes.58">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//Type2Type/target"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="T2T->trgType" sourceNode="//@nodeSet/@nodes.12" targetNode="//@nodeSet/@nodes.59">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//Type2Type/target"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="TR2TR->srcRef" sourceNode="//@nodeSet/@nodes.13" targetNode="//@nodeSet/@nodes.31">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef/source"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="TR2TR->srcRef" sourceNode="//@nodeSet/@nodes.14" targetNode="//@nodeSet/@nodes.33">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef/source"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="TR2TR->srcRef" sourceNode="//@nodeSet/@nodes.15" targetNode="//@nodeSet/@nodes.34">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef/source"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="TR2TR->srcRef" sourceNode="//@nodeSet/@nodes.16" targetNode="//@nodeSet/@nodes.35">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef/source"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="TR2TR->trgRef" sourceNode="//@nodeSet/@nodes.13" targetNode="//@nodeSet/@nodes.51">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef/target"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="TR2TR->trgRef" sourceNode="//@nodeSet/@nodes.14" targetNode="//@nodeSet/@nodes.53">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef/target"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="TR2TR->trgRef" sourceNode="//@nodeSet/@nodes.15" targetNode="//@nodeSet/@nodes.54">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef/target"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="TR2TR->trgRef" sourceNode="//@nodeSet/@nodes.16" targetNode="//@nodeSet/@nodes.55">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef/target"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="TR2TR2->srcRef2" sourceNode="//@nodeSet/@nodes.17" targetNode="//@nodeSet/@nodes.36">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef/source"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="TR2TR2->trgRef2" sourceNode="//@nodeSet/@nodes.17" targetNode="//@nodeSet/@nodes.56">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef/target"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="a2a->srcRef" sourceNode="//@nodeSet/@nodes.18" targetNode="//@nodeSet/@nodes.32">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef/source"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="a2a->trgRef" sourceNode="//@nodeSet/@nodes.18" targetNode="//@nodeSet/@nodes.52">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef/target"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="b2b->srcType" sourceNode="//@nodeSet/@nodes.19" targetNode="//@nodeSet/@nodes.37">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//Type2Type/source"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="b2b->trgType" sourceNode="//@nodeSet/@nodes.19" targetNode="//@nodeSet/@nodes.57">
+      <type xmi:type="ecore:EReference" href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//Type2Type/target"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="srcClass->srcField" sourceNode="//@nodeSet/@nodes.21" targetNode="//@nodeSet/@nodes.24">
+      <type xmi:type="ecore:EReference" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleClass/simpleFields"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="srcClass->srcMethod" sourceNode="//@nodeSet/@nodes.22" targetNode="//@nodeSet/@nodes.25">
+      <type xmi:type="ecore:EReference" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleClass/simpleMethods"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="srcField->srcRef" sourceNode="//@nodeSet/@nodes.23" targetNode="//@nodeSet/@nodes.31">
+      <type xmi:type="ecore:EReference" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleField/fieldType"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="srcMethod->srcParam" sourceNode="//@nodeSet/@nodes.26" targetNode="//@nodeSet/@nodes.30">
+      <type xmi:type="ecore:EReference" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleMethod/params"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="srcPackage->srcClass" sourceNode="//@nodeSet/@nodes.27" targetNode="//@nodeSet/@nodes.20">
+      <type xmi:type="ecore:EReference" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimplePackage/simpleClasses"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="srcParam->srcRef" sourceNode="//@nodeSet/@nodes.29" targetNode="//@nodeSet/@nodes.33">
+      <type xmi:type="ecore:EReference" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleParam/paramType"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="srcRef->srcType" sourceNode="//@nodeSet/@nodes.32" targetNode="//@nodeSet/@nodes.37">
+      <type xmi:type="ecore:EReference" href="http://www.eclipse.org/xtext/common/JavaVMTypes#//JvmParameterizedTypeReference/type"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="srcRef->srcType" sourceNode="//@nodeSet/@nodes.34" targetNode="//@nodeSet/@nodes.38">
+      <type xmi:type="ecore:EReference" href="http://www.eclipse.org/xtext/common/JavaVMTypes#//JvmParameterizedTypeReference/type"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="srcRef->srcType" sourceNode="//@nodeSet/@nodes.35" targetNode="//@nodeSet/@nodes.39">
+      <type xmi:type="ecore:EReference" href="http://www.eclipse.org/xtext/common/JavaVMTypes#//JvmParameterizedTypeReference/type"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="srcRef2->srcType" sourceNode="//@nodeSet/@nodes.36" targetNode="//@nodeSet/@nodes.39">
+      <type xmi:type="ecore:EReference" href="http://www.eclipse.org/xtext/common/JavaVMTypes#//JvmParameterizedTypeReference/type"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="trgClass->trgField" sourceNode="//@nodeSet/@nodes.41" targetNode="//@nodeSet/@nodes.44">
+      <type xmi:type="ecore:EReference" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleClass/simpleFields"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="trgClass->trgMethod" sourceNode="//@nodeSet/@nodes.42" targetNode="//@nodeSet/@nodes.45">
+      <type xmi:type="ecore:EReference" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleClass/simpleMethods"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="trgField->trgRef" sourceNode="//@nodeSet/@nodes.43" targetNode="//@nodeSet/@nodes.51">
+      <type xmi:type="ecore:EReference" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleField/fieldType"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="trgMethod->trgParam" sourceNode="//@nodeSet/@nodes.46" targetNode="//@nodeSet/@nodes.50">
+      <type xmi:type="ecore:EReference" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleMethod/params"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="trgPackage->trgClass" sourceNode="//@nodeSet/@nodes.47" targetNode="//@nodeSet/@nodes.40">
+      <type xmi:type="ecore:EReference" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimplePackage/simpleClasses"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="trgParam->trgRef" sourceNode="//@nodeSet/@nodes.49" targetNode="//@nodeSet/@nodes.53">
+      <type xmi:type="ecore:EReference" href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleParam/paramType"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="trgRef->trgType" sourceNode="//@nodeSet/@nodes.52" targetNode="//@nodeSet/@nodes.57">
+      <type xmi:type="ecore:EReference" href="http://www.eclipse.org/xtext/common/JavaVMTypes#//JvmParameterizedTypeReference/type"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="trgRef->trgType" sourceNode="//@nodeSet/@nodes.54" targetNode="//@nodeSet/@nodes.58">
+      <type xmi:type="ecore:EReference" href="http://www.eclipse.org/xtext/common/JavaVMTypes#//JvmParameterizedTypeReference/type"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="trgRef->trgType" sourceNode="//@nodeSet/@nodes.55" targetNode="//@nodeSet/@nodes.59">
+      <type xmi:type="ecore:EReference" href="http://www.eclipse.org/xtext/common/JavaVMTypes#//JvmParameterizedTypeReference/type"/>
+    </edges>
+    <edges xmi:type="IBeXPatternModel:IBeXEdge" name="trgRef2->trgType" sourceNode="//@nodeSet/@nodes.56" targetNode="//@nodeSet/@nodes.59">
+      <type xmi:type="ecore:EReference" href="http://www.eclipse.org/xtext/common/JavaVMTypes#//JvmParameterizedTypeReference/type"/>
+    </edges>
+  </edgeSet>
+</IBeXPatternModel:IBeXModel>

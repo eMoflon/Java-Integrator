@@ -1,0 +1,38 @@
+#using JavaExchange.*
+#using AttrCondDefLibrary.*
+
+#rule GenericType2GenericTypeRule #with JavaExchange
+
+#source { 
+	srcRef:JvmParameterizedTypeReference{
+		++-type->srcType
+	}
+	
+	++srcType:JvmGenericType
+}
+
+#target {
+	trgRef:JvmParameterizedTypeReference{
+		++-type->trgType
+	}
+	
+	++trgType:JvmGenericType
+}
+
+#correspondence {
+	
+	a2a:TypeRef2TypeRef{
+		#src->srcRef
+		#trg->trgRef
+	}
+	
+	++b2b:Type2Type{
+		#src->srcType
+		#trg->trgType
+	}
+}
+
+#attributeConditions {
+	eq_string(srcType.packageName, trgType.packageName)
+	eq_string(srcType.simpleName, trgType.simpleName)
+}

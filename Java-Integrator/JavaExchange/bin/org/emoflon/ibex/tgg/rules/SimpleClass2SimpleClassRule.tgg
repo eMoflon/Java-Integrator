@@ -1,0 +1,36 @@
+#using JavaExchange.*
+#using AttrCondDefLibrary.*
+
+#rule SimpleClass2SimpleClassRule #with JavaExchange
+
+#source {
+	srcPackage:SimplePackage{
+		++-simpleClasses -> srcClass
+	}
+
+	++srcClass:SimpleClass
+}
+
+#target {
+	trgPackage:SimplePackage{
+		++-simpleClasses -> trgClass
+	}
+
+	++trgClass:SimpleClass
+}
+
+#correspondence {
+	SP2SP:SimplePackage2SimplePackage{
+		#src->srcPackage
+		#trg->trgPackage
+	}
+
+	++SC2SC:SimpleClass2SimpleClass{
+		#src->srcClass
+		#trg->trgClass
+	}
+}
+
+#attributeConditions {
+	eq_string(srcClass.name, trgClass.name)
+}

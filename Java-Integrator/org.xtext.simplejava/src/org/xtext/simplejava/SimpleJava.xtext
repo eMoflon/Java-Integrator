@@ -1,0 +1,29 @@
+grammar org.xtext.simplejava.SimpleJava with org.eclipse.xtext.xbase.Xbase
+
+generate simpleJava "http://www.xtext.org/simplejava/SimpleJava"
+import "http://www.eclipse.org/xtext/common/JavaVMTypes" as types
+import "http://www.eclipse.org/xtext/xbase/Xbase" as xbase
+
+SimplePackage:
+	'package' name=QualifiedName ';'
+	(simpleClasses+=SimpleClass)*;
+
+SimpleClass:
+	'public' 'class' name=ValidID
+	'{'
+	(simpleFields+=SimpleField)*
+	(simpleMethods+=SimpleMethod)*
+	'}';
+
+SimpleField:
+	accessType=Access (isStatic?='static')? (isFinal?='final')? fieldType=JvmParameterizedTypeReference name=ValidID ';'
+;
+
+SimpleMethod:
+	accessType=Access 'void' name=ValidID '(' (params+=SimpleParam (',' params+=SimpleParam)*)? ')' '{' '}';
+
+SimpleParam:
+	paramType=JvmParameterizedTypeReference name=ValidID;
+
+Access:
+	'private' | 'public' | 'protected';

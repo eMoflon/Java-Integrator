@@ -1,0 +1,119 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<genmodel:GenModel xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:ecore="http://www.eclipse.org/emf/2002/Ecore"
+    xmlns:genmodel="http://www.eclipse.org/emf/2002/GenModel" modelDirectory="JavaExchange/gen/" modelPluginID="JavaExchange"
+    modelName="JavaExchange" generateSchema="true" rootExtendsClass="org.eclipse.emf.ecore.impl.MinimalEObjectImpl$Container"
+    importerID="org.eclipse.emf.importer.ecore" complianceLevel="5.0" copyrightFields="false"
+    usedGenPackages="platform:/plugin/org.emoflon.ibex.tgg.runtime/model/Runtime.genmodel#//runtime ../../org.xtext.simplejava/model/generated/SimpleJava.genmodel#//simpleJava platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.genmodel#//types"
+    operationReflection="true" importOrganizing="true">
+  <foreignModel>JavaExchange.ecore</foreignModel>
+  <genPackages prefix="JavaExchange" disposableProviderFactory="true" ecorePackage="JavaExchange.ecore#/">
+    <genClasses ecoreClass="JavaExchange.ecore#//SimplePackage2SimplePackage">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimplePackage2SimplePackage/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimplePackage2SimplePackage/target"/>
+    </genClasses>
+    <genClasses ecoreClass="JavaExchange.ecore#//SimpleClass2SimpleClass">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimpleClass2SimpleClass/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimpleClass2SimpleClass/target"/>
+    </genClasses>
+    <genClasses ecoreClass="JavaExchange.ecore#//SimpleField2SimpleField">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimpleField2SimpleField/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimpleField2SimpleField/target"/>
+    </genClasses>
+    <genClasses ecoreClass="JavaExchange.ecore#//SimpleMethod2SimpleMethod">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimpleMethod2SimpleMethod/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimpleMethod2SimpleMethod/target"/>
+    </genClasses>
+    <genClasses ecoreClass="JavaExchange.ecore#//SimpleParam2SimpleParam">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimpleParam2SimpleParam/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimpleParam2SimpleParam/target"/>
+    </genClasses>
+    <genClasses ecoreClass="JavaExchange.ecore#//TypeRef2TypeRef">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//TypeRef2TypeRef/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//TypeRef2TypeRef/target"/>
+    </genClasses>
+    <genClasses ecoreClass="JavaExchange.ecore#//Type2Type">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//Type2Type/source"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//Type2Type/target"/>
+    </genClasses>
+    <genClasses ecoreClass="JavaExchange.ecore#//FieldType2FieldTypeRule__Marker">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//FieldType2FieldTypeRule__Marker/CONTEXT__SRC__srcField"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//FieldType2FieldTypeRule__Marker/CREATE__SRC__srcRef"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//FieldType2FieldTypeRule__Marker/CONTEXT__TRG__trgField"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//FieldType2FieldTypeRule__Marker/CREATE__TRG__trgRef"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//FieldType2FieldTypeRule__Marker/CONTEXT__CORR__SF2SF"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//FieldType2FieldTypeRule__Marker/CREATE__CORR__TR2TR"/>
+    </genClasses>
+    <genClasses ecoreClass="JavaExchange.ecore#//GenericType2GenericTypeRule__Marker">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//GenericType2GenericTypeRule__Marker/CONTEXT__SRC__srcRef"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//GenericType2GenericTypeRule__Marker/CREATE__SRC__srcType"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//GenericType2GenericTypeRule__Marker/CONTEXT__TRG__trgRef"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//GenericType2GenericTypeRule__Marker/CREATE__TRG__trgType"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//GenericType2GenericTypeRule__Marker/CONTEXT__CORR__a2a"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//GenericType2GenericTypeRule__Marker/CREATE__CORR__b2b"/>
+    </genClasses>
+    <genClasses ecoreClass="JavaExchange.ecore#//ParamType2ParamTypeRule__Marker">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//ParamType2ParamTypeRule__Marker/CONTEXT__SRC__srcParam"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//ParamType2ParamTypeRule__Marker/CREATE__SRC__srcRef"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//ParamType2ParamTypeRule__Marker/CONTEXT__TRG__trgParam"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//ParamType2ParamTypeRule__Marker/CREATE__TRG__trgRef"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//ParamType2ParamTypeRule__Marker/CONTEXT__CORR__SPa2SPa"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//ParamType2ParamTypeRule__Marker/CREATE__CORR__TR2TR"/>
+    </genClasses>
+    <genClasses ecoreClass="JavaExchange.ecore#//PrimitiveType2PrimitiveTypeRule__Marker">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//PrimitiveType2PrimitiveTypeRule__Marker/CONTEXT__SRC__srcRef"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//PrimitiveType2PrimitiveTypeRule__Marker/CREATE__SRC__srcType"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//PrimitiveType2PrimitiveTypeRule__Marker/CONTEXT__TRG__trgRef"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//PrimitiveType2PrimitiveTypeRule__Marker/CREATE__TRG__trgType"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//PrimitiveType2PrimitiveTypeRule__Marker/CREATE__CORR__T2T"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//PrimitiveType2PrimitiveTypeRule__Marker/CONTEXT__CORR__TR2TR"/>
+    </genClasses>
+    <genClasses ecoreClass="JavaExchange.ecore#//SecondTypeRef2SecondTypeRefRule__Marker">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SecondTypeRef2SecondTypeRefRule__Marker/CONTEXT__SRC__srcRef"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SecondTypeRef2SecondTypeRefRule__Marker/CONTEXT__SRC__srcRef2"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SecondTypeRef2SecondTypeRefRule__Marker/CONTEXT__SRC__srcType"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SecondTypeRef2SecondTypeRefRule__Marker/CONTEXT__TRG__trgRef"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SecondTypeRef2SecondTypeRefRule__Marker/CONTEXT__TRG__trgRef2"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SecondTypeRef2SecondTypeRefRule__Marker/CONTEXT__TRG__trgType"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SecondTypeRef2SecondTypeRefRule__Marker/CONTEXT__CORR__T2T"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SecondTypeRef2SecondTypeRefRule__Marker/CONTEXT__CORR__TR2TR"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SecondTypeRef2SecondTypeRefRule__Marker/CONTEXT__CORR__TR2TR2"/>
+    </genClasses>
+    <genClasses ecoreClass="JavaExchange.ecore#//SimpleClass2SimpleClassRule__Marker">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimpleClass2SimpleClassRule__Marker/CREATE__SRC__srcClass"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimpleClass2SimpleClassRule__Marker/CONTEXT__SRC__srcPackage"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimpleClass2SimpleClassRule__Marker/CREATE__TRG__trgClass"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimpleClass2SimpleClassRule__Marker/CONTEXT__TRG__trgPackage"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimpleClass2SimpleClassRule__Marker/CREATE__CORR__SC2SC"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimpleClass2SimpleClassRule__Marker/CONTEXT__CORR__SP2SP"/>
+    </genClasses>
+    <genClasses ecoreClass="JavaExchange.ecore#//SimpleField2SimpleFieldRule__Marker">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimpleField2SimpleFieldRule__Marker/CONTEXT__SRC__srcClass"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimpleField2SimpleFieldRule__Marker/CREATE__SRC__srcField"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimpleField2SimpleFieldRule__Marker/CONTEXT__TRG__trgClass"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimpleField2SimpleFieldRule__Marker/CREATE__TRG__trgField"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimpleField2SimpleFieldRule__Marker/CONTEXT__CORR__SC2SC"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimpleField2SimpleFieldRule__Marker/CREATE__CORR__SF2SF"/>
+    </genClasses>
+    <genClasses ecoreClass="JavaExchange.ecore#//SimpleMethod2SimpleMethodRule__Marker">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimpleMethod2SimpleMethodRule__Marker/CONTEXT__SRC__srcClass"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimpleMethod2SimpleMethodRule__Marker/CREATE__SRC__srcMethod"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimpleMethod2SimpleMethodRule__Marker/CONTEXT__TRG__trgClass"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimpleMethod2SimpleMethodRule__Marker/CREATE__TRG__trgMethod"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimpleMethod2SimpleMethodRule__Marker/CONTEXT__CORR__SC2SC"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimpleMethod2SimpleMethodRule__Marker/CREATE__CORR__SM2SM"/>
+    </genClasses>
+    <genClasses ecoreClass="JavaExchange.ecore#//SimplePackage2SimplePackageRule__Marker">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimplePackage2SimplePackageRule__Marker/CREATE__SRC__srcPackage"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimplePackage2SimplePackageRule__Marker/CREATE__TRG__trgPackage"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimplePackage2SimplePackageRule__Marker/CREATE__CORR__SP2SP"/>
+    </genClasses>
+    <genClasses ecoreClass="JavaExchange.ecore#//SimpleParam2SimpleParamRule__Marker">
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimpleParam2SimpleParamRule__Marker/CONTEXT__SRC__srcMethod"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimpleParam2SimpleParamRule__Marker/CREATE__SRC__srcParam"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimpleParam2SimpleParamRule__Marker/CONTEXT__TRG__trgMethod"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimpleParam2SimpleParamRule__Marker/CREATE__TRG__trgParam"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimpleParam2SimpleParamRule__Marker/CONTEXT__CORR__SM2SM"/>
+      <genFeatures notify="false" createChild="false" propertySortChoices="true" ecoreFeature="ecore:EReference JavaExchange.ecore#//SimpleParam2SimpleParamRule__Marker/CREATE__CORR__SPa2SPa"/>
+    </genClasses>
+  </genPackages>
+</genmodel:GenModel>

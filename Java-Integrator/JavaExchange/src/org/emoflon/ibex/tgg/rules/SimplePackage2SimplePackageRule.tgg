@@ -1,0 +1,23 @@
+#using JavaExchange.*
+#using AttrCondDefLibrary.*
+
+#rule SimplePackage2SimplePackageRule #with JavaExchange
+
+#source { 
+	++srcPackage:SimplePackage
+}
+
+#target {
+	++trgPackage:SimplePackage
+}
+
+#correspondence {
+	++SP2SP:SimplePackage2SimplePackage{
+		#src->srcPackage
+		#trg->trgPackage
+	}
+}
+
+#attributeConditions {
+	eq_string(srcPackage.name, trgPackage.name)
+}

@@ -1,0 +1,36 @@
+#using JavaExchange.*
+#using AttrCondDefLibrary.*
+
+#rule FieldType2FieldTypeRule #with JavaExchange
+
+#source {
+	srcField:SimpleField{
+		++-fieldType -> srcRef
+	}
+
+	++srcRef:JvmParameterizedTypeReference
+}
+
+#target {
+	trgField:SimpleField{
+		++-fieldType -> trgRef
+	}
+
+	++trgRef:JvmParameterizedTypeReference
+}
+
+#correspondence {
+	SF2SF:SimpleField2SimpleField{
+		#src->srcField
+		#trg->trgField
+	}
+
+	++TR2TR:TypeRef2TypeRef{
+		#src->srcRef
+		#trg->trgRef
+	}
+
+}
+
+#attributeConditions {
+}

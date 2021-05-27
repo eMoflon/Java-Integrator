@@ -1,0 +1,37 @@
+#using JavaExchange.*
+#using AttrCondDefLibrary.*
+
+#rule PrimitiveType2PrimitiveTypeRule #with JavaExchange
+
+#source { 
+	srcRef:JvmParameterizedTypeReference{
+		++-type->srcType
+	}
+	
+	++srcType:JvmPrimitiveType
+}
+
+#target {
+	trgRef:JvmParameterizedTypeReference{
+		++-type->trgType
+	}
+	
+	++trgType:JvmPrimitiveType
+}
+
+#correspondence {
+	
+	TR2TR:TypeRef2TypeRef{
+		#src->srcRef
+		#trg->trgRef
+	}
+	
+	++T2T:Type2Type{
+		#src->srcType
+		#trg->trgType
+	}
+}
+
+#attributeConditions {
+	eq_string(srcType.simpleName, trgType.simpleName)
+}

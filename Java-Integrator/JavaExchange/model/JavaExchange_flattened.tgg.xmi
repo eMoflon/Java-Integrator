@@ -1,0 +1,567 @@
+<?xml version="1.0" encoding="ASCII"?>
+<language:TGG xmi:version="2.0" xmlns:xmi="http://www.omg.org/XMI" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" xmlns:language="platform:/plugin/org.emoflon.ibex.tgg.language/model/Language.ecore" name="JavaExchange">
+  <src href="platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#/"/>
+  <src href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#/"/>
+  <src href="platform:/plugin/org.eclipse.xtext.xbase/model/Xtype.ecore#/"/>
+  <src href="platform:/plugin/org.eclipse.xtext.xbase/model/XAnnotations.ecore#/"/>
+  <trg href="platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#/"/>
+  <trg href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#/"/>
+  <trg href="platform:/plugin/org.eclipse.xtext.xbase/model/Xtype.ecore#/"/>
+  <trg href="platform:/plugin/org.eclipse.xtext.xbase/model/XAnnotations.ecore#/"/>
+  <corr href="platform:/resource/JavaExchange/model/JavaExchange.ecore#/"/>
+  <rules name="FieldType2FieldTypeRule">
+    <nodes name="srcField" incomingEdges="//@rules.0/@edges.0" outgoingEdges="//@rules.0/@edges.4" incomingCorrsSource="//@rules.0/@nodes.4">
+      <type href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleField"/>
+    </nodes>
+    <nodes name="srcRef" bindingType="CREATE" incomingEdges="//@rules.0/@edges.2 //@rules.0/@edges.4" incomingCorrsSource="//@rules.0/@nodes.5">
+      <type href="platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmParameterizedTypeReference"/>
+    </nodes>
+    <nodes name="trgField" domainType="TRG" incomingEdges="//@rules.0/@edges.1" outgoingEdges="//@rules.0/@edges.5" incomingCorrsTarget="//@rules.0/@nodes.4">
+      <type href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleField"/>
+    </nodes>
+    <nodes name="trgRef" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.0/@edges.3 //@rules.0/@edges.5" incomingCorrsTarget="//@rules.0/@nodes.5">
+      <type href="platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmParameterizedTypeReference"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="SF2SF" domainType="CORR" outgoingEdges="//@rules.0/@edges.0 //@rules.0/@edges.1" source="//@rules.0/@nodes.0" target="//@rules.0/@nodes.2">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleField2SimpleField"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="TR2TR" domainType="CORR" bindingType="CREATE" outgoingEdges="//@rules.0/@edges.2 //@rules.0/@edges.3" source="//@rules.0/@nodes.1" target="//@rules.0/@nodes.3">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef"/>
+    </nodes>
+    <edges name="SF2SF__source__srcField_eMoflonEdge" domainType="CORR" srcNode="//@rules.0/@nodes.4" trgNode="//@rules.0/@nodes.0">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleField2SimpleField/source"/>
+    </edges>
+    <edges name="SF2SF__target__trgField_eMoflonEdge" domainType="CORR" srcNode="//@rules.0/@nodes.4" trgNode="//@rules.0/@nodes.2">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleField2SimpleField/target"/>
+    </edges>
+    <edges name="TR2TR__source__srcRef_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.0/@nodes.5" trgNode="//@rules.0/@nodes.1">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef/source"/>
+    </edges>
+    <edges name="TR2TR__target__trgRef_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.0/@nodes.5" trgNode="//@rules.0/@nodes.3">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef/target"/>
+    </edges>
+    <edges name="srcField__fieldType__srcRef_eMoflonEdge" bindingType="CREATE" srcNode="//@rules.0/@nodes.0" trgNode="//@rules.0/@nodes.1">
+      <type href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleField/fieldType"/>
+    </edges>
+    <edges name="trgField__fieldType__trgRef_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.0/@nodes.2" trgNode="//@rules.0/@nodes.3">
+      <type href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleField/fieldType"/>
+    </edges>
+    <attributeConditionLibrary/>
+  </rules>
+  <rules name="GenericType2GenericTypeRule">
+    <nodes name="srcRef" incomingEdges="//@rules.1/@edges.0" outgoingEdges="//@rules.1/@edges.4" incomingCorrsSource="//@rules.1/@nodes.4">
+      <type href="platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmParameterizedTypeReference"/>
+    </nodes>
+    <nodes name="srcType" bindingType="CREATE" incomingEdges="//@rules.1/@edges.2 //@rules.1/@edges.4" incomingCorrsSource="//@rules.1/@nodes.5">
+      <type href="platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmGenericType"/>
+    </nodes>
+    <nodes name="trgRef" domainType="TRG" incomingEdges="//@rules.1/@edges.1" outgoingEdges="//@rules.1/@edges.5" incomingCorrsTarget="//@rules.1/@nodes.4">
+      <type href="platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmParameterizedTypeReference"/>
+    </nodes>
+    <nodes name="trgType" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.1/@edges.3 //@rules.1/@edges.5" incomingCorrsTarget="//@rules.1/@nodes.5">
+      <type href="platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmGenericType"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="a2a" domainType="CORR" outgoingEdges="//@rules.1/@edges.0 //@rules.1/@edges.1" source="//@rules.1/@nodes.0" target="//@rules.1/@nodes.2">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="b2b" domainType="CORR" bindingType="CREATE" outgoingEdges="//@rules.1/@edges.2 //@rules.1/@edges.3" source="//@rules.1/@nodes.1" target="//@rules.1/@nodes.3">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//Type2Type"/>
+    </nodes>
+    <edges name="a2a__source__srcRef_eMoflonEdge" domainType="CORR" srcNode="//@rules.1/@nodes.4" trgNode="//@rules.1/@nodes.0">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef/source"/>
+    </edges>
+    <edges name="a2a__target__trgRef_eMoflonEdge" domainType="CORR" srcNode="//@rules.1/@nodes.4" trgNode="//@rules.1/@nodes.2">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef/target"/>
+    </edges>
+    <edges name="b2b__source__srcType_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.1/@nodes.5" trgNode="//@rules.1/@nodes.1">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//Type2Type/source"/>
+    </edges>
+    <edges name="b2b__target__trgType_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.1/@nodes.5" trgNode="//@rules.1/@nodes.3">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//Type2Type/target"/>
+    </edges>
+    <edges name="srcRef__type__srcType_eMoflonEdge" bindingType="CREATE" srcNode="//@rules.1/@nodes.0" trgNode="//@rules.1/@nodes.1">
+      <type href="platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmParameterizedTypeReference/type"/>
+    </edges>
+    <edges name="trgRef__type__trgType_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.1/@nodes.2" trgNode="//@rules.1/@nodes.3">
+      <type href="platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmParameterizedTypeReference/type"/>
+    </edges>
+    <attributeConditionLibrary>
+      <tggAttributeConstraints definition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.0" parameters="//@rules.1/@attributeConditionLibrary/@parameterValues.0 //@rules.1/@attributeConditionLibrary/@parameterValues.1"/>
+      <tggAttributeConstraints definition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.0" parameters="//@rules.1/@attributeConditionLibrary/@parameterValues.2 //@rules.1/@attributeConditionLibrary/@parameterValues.3"/>
+      <parameterValues xsi:type="language:TGGAttributeExpression" parameterDefinition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.0/@parameterDefinitions.0" objectVar="//@rules.1/@nodes.1">
+        <attribute href="platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmDeclaredType/packageName"/>
+      </parameterValues>
+      <parameterValues xsi:type="language:TGGAttributeExpression" parameterDefinition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.0/@parameterDefinitions.1" objectVar="//@rules.1/@nodes.3">
+        <attribute href="platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmDeclaredType/packageName"/>
+      </parameterValues>
+      <parameterValues xsi:type="language:TGGAttributeExpression" parameterDefinition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.0/@parameterDefinitions.0" objectVar="//@rules.1/@nodes.1">
+        <attribute href="platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmMember/simpleName"/>
+      </parameterValues>
+      <parameterValues xsi:type="language:TGGAttributeExpression" parameterDefinition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.0/@parameterDefinitions.1" objectVar="//@rules.1/@nodes.3">
+        <attribute href="platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmMember/simpleName"/>
+      </parameterValues>
+    </attributeConditionLibrary>
+  </rules>
+  <rules name="ParamType2ParamTypeRule">
+    <nodes name="srcParam" incomingEdges="//@rules.2/@edges.0" outgoingEdges="//@rules.2/@edges.4" incomingCorrsSource="//@rules.2/@nodes.4">
+      <type href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleParam"/>
+    </nodes>
+    <nodes name="srcRef" bindingType="CREATE" incomingEdges="//@rules.2/@edges.2 //@rules.2/@edges.4" incomingCorrsSource="//@rules.2/@nodes.5">
+      <type href="platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmParameterizedTypeReference"/>
+    </nodes>
+    <nodes name="trgParam" domainType="TRG" incomingEdges="//@rules.2/@edges.1" outgoingEdges="//@rules.2/@edges.5" incomingCorrsTarget="//@rules.2/@nodes.4">
+      <type href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleParam"/>
+    </nodes>
+    <nodes name="trgRef" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.2/@edges.3 //@rules.2/@edges.5" incomingCorrsTarget="//@rules.2/@nodes.5">
+      <type href="platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmParameterizedTypeReference"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="SPa2SPa" domainType="CORR" outgoingEdges="//@rules.2/@edges.0 //@rules.2/@edges.1" source="//@rules.2/@nodes.0" target="//@rules.2/@nodes.2">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleParam2SimpleParam"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="TR2TR" domainType="CORR" bindingType="CREATE" outgoingEdges="//@rules.2/@edges.2 //@rules.2/@edges.3" source="//@rules.2/@nodes.1" target="//@rules.2/@nodes.3">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef"/>
+    </nodes>
+    <edges name="SPa2SPa__source__srcParam_eMoflonEdge" domainType="CORR" srcNode="//@rules.2/@nodes.4" trgNode="//@rules.2/@nodes.0">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleParam2SimpleParam/source"/>
+    </edges>
+    <edges name="SPa2SPa__target__trgParam_eMoflonEdge" domainType="CORR" srcNode="//@rules.2/@nodes.4" trgNode="//@rules.2/@nodes.2">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleParam2SimpleParam/target"/>
+    </edges>
+    <edges name="TR2TR__source__srcRef_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.2/@nodes.5" trgNode="//@rules.2/@nodes.1">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef/source"/>
+    </edges>
+    <edges name="TR2TR__target__trgRef_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.2/@nodes.5" trgNode="//@rules.2/@nodes.3">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef/target"/>
+    </edges>
+    <edges name="srcParam__paramType__srcRef_eMoflonEdge" bindingType="CREATE" srcNode="//@rules.2/@nodes.0" trgNode="//@rules.2/@nodes.1">
+      <type href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleParam/paramType"/>
+    </edges>
+    <edges name="trgParam__paramType__trgRef_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.2/@nodes.2" trgNode="//@rules.2/@nodes.3">
+      <type href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleParam/paramType"/>
+    </edges>
+    <attributeConditionLibrary/>
+  </rules>
+  <rules name="PrimitiveType2PrimitiveTypeRule">
+    <nodes name="srcRef" incomingEdges="//@rules.3/@edges.2" outgoingEdges="//@rules.3/@edges.4" incomingCorrsSource="//@rules.3/@nodes.5">
+      <type href="platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmParameterizedTypeReference"/>
+    </nodes>
+    <nodes name="srcType" bindingType="CREATE" incomingEdges="//@rules.3/@edges.0 //@rules.3/@edges.4" incomingCorrsSource="//@rules.3/@nodes.4">
+      <type href="platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmPrimitiveType"/>
+    </nodes>
+    <nodes name="trgRef" domainType="TRG" incomingEdges="//@rules.3/@edges.3" outgoingEdges="//@rules.3/@edges.5" incomingCorrsTarget="//@rules.3/@nodes.5">
+      <type href="platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmParameterizedTypeReference"/>
+    </nodes>
+    <nodes name="trgType" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.3/@edges.1 //@rules.3/@edges.5" incomingCorrsTarget="//@rules.3/@nodes.4">
+      <type href="platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmPrimitiveType"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="T2T" domainType="CORR" bindingType="CREATE" outgoingEdges="//@rules.3/@edges.0 //@rules.3/@edges.1" source="//@rules.3/@nodes.1" target="//@rules.3/@nodes.3">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//Type2Type"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="TR2TR" domainType="CORR" outgoingEdges="//@rules.3/@edges.2 //@rules.3/@edges.3" source="//@rules.3/@nodes.0" target="//@rules.3/@nodes.2">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef"/>
+    </nodes>
+    <edges name="T2T__source__srcType_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.3/@nodes.4" trgNode="//@rules.3/@nodes.1">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//Type2Type/source"/>
+    </edges>
+    <edges name="T2T__target__trgType_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.3/@nodes.4" trgNode="//@rules.3/@nodes.3">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//Type2Type/target"/>
+    </edges>
+    <edges name="TR2TR__source__srcRef_eMoflonEdge" domainType="CORR" srcNode="//@rules.3/@nodes.5" trgNode="//@rules.3/@nodes.0">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef/source"/>
+    </edges>
+    <edges name="TR2TR__target__trgRef_eMoflonEdge" domainType="CORR" srcNode="//@rules.3/@nodes.5" trgNode="//@rules.3/@nodes.2">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef/target"/>
+    </edges>
+    <edges name="srcRef__type__srcType_eMoflonEdge" bindingType="CREATE" srcNode="//@rules.3/@nodes.0" trgNode="//@rules.3/@nodes.1">
+      <type href="platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmParameterizedTypeReference/type"/>
+    </edges>
+    <edges name="trgRef__type__trgType_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.3/@nodes.2" trgNode="//@rules.3/@nodes.3">
+      <type href="platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmParameterizedTypeReference/type"/>
+    </edges>
+    <attributeConditionLibrary>
+      <tggAttributeConstraints definition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.0" parameters="//@rules.3/@attributeConditionLibrary/@parameterValues.0 //@rules.3/@attributeConditionLibrary/@parameterValues.1"/>
+      <parameterValues xsi:type="language:TGGAttributeExpression" parameterDefinition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.0/@parameterDefinitions.0" objectVar="//@rules.3/@nodes.1">
+        <attribute href="platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmPrimitiveType/simpleName"/>
+      </parameterValues>
+      <parameterValues xsi:type="language:TGGAttributeExpression" parameterDefinition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.0/@parameterDefinitions.1" objectVar="//@rules.3/@nodes.3">
+        <attribute href="platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmPrimitiveType/simpleName"/>
+      </parameterValues>
+    </attributeConditionLibrary>
+  </rules>
+  <rules name="SecondTypeRef2SecondTypeRefRule">
+    <nodes name="srcRef" incomingEdges="//@rules.4/@edges.2" outgoingEdges="//@rules.4/@edges.6" incomingCorrsSource="//@rules.4/@nodes.7">
+      <type href="platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmParameterizedTypeReference"/>
+    </nodes>
+    <nodes name="srcRef2" incomingEdges="//@rules.4/@edges.4" outgoingEdges="//@rules.4/@edges.7" incomingCorrsSource="//@rules.4/@nodes.8">
+      <type href="platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmParameterizedTypeReference"/>
+    </nodes>
+    <nodes name="srcType" incomingEdges="//@rules.4/@edges.0 //@rules.4/@edges.6 //@rules.4/@edges.7" incomingCorrsSource="//@rules.4/@nodes.6">
+      <type href="platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmType"/>
+    </nodes>
+    <nodes name="trgRef" domainType="TRG" incomingEdges="//@rules.4/@edges.3" outgoingEdges="//@rules.4/@edges.8" incomingCorrsTarget="//@rules.4/@nodes.7">
+      <type href="platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmParameterizedTypeReference"/>
+    </nodes>
+    <nodes name="trgRef2" domainType="TRG" incomingEdges="//@rules.4/@edges.5" outgoingEdges="//@rules.4/@edges.9" incomingCorrsTarget="//@rules.4/@nodes.8">
+      <type href="platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmParameterizedTypeReference"/>
+    </nodes>
+    <nodes name="trgType" domainType="TRG" incomingEdges="//@rules.4/@edges.1 //@rules.4/@edges.8 //@rules.4/@edges.9" incomingCorrsTarget="//@rules.4/@nodes.6">
+      <type href="platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmType"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="T2T" domainType="CORR" outgoingEdges="//@rules.4/@edges.0 //@rules.4/@edges.1" source="//@rules.4/@nodes.2" target="//@rules.4/@nodes.5">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//Type2Type"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="TR2TR" domainType="CORR" outgoingEdges="//@rules.4/@edges.2 //@rules.4/@edges.3" source="//@rules.4/@nodes.0" target="//@rules.4/@nodes.3">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="TR2TR2" domainType="CORR" outgoingEdges="//@rules.4/@edges.4 //@rules.4/@edges.5" source="//@rules.4/@nodes.1" target="//@rules.4/@nodes.4">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef"/>
+    </nodes>
+    <edges name="T2T__source__srcType_eMoflonEdge" domainType="CORR" srcNode="//@rules.4/@nodes.6" trgNode="//@rules.4/@nodes.2">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//Type2Type/source"/>
+    </edges>
+    <edges name="T2T__target__trgType_eMoflonEdge" domainType="CORR" srcNode="//@rules.4/@nodes.6" trgNode="//@rules.4/@nodes.5">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//Type2Type/target"/>
+    </edges>
+    <edges name="TR2TR__source__srcRef_eMoflonEdge" domainType="CORR" srcNode="//@rules.4/@nodes.7" trgNode="//@rules.4/@nodes.0">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef/source"/>
+    </edges>
+    <edges name="TR2TR__target__trgRef_eMoflonEdge" domainType="CORR" srcNode="//@rules.4/@nodes.7" trgNode="//@rules.4/@nodes.3">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef/target"/>
+    </edges>
+    <edges name="TR2TR2__source__srcRef2_eMoflonEdge" domainType="CORR" srcNode="//@rules.4/@nodes.8" trgNode="//@rules.4/@nodes.1">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef/source"/>
+    </edges>
+    <edges name="TR2TR2__target__trgRef2_eMoflonEdge" domainType="CORR" srcNode="//@rules.4/@nodes.8" trgNode="//@rules.4/@nodes.4">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//TypeRef2TypeRef/target"/>
+    </edges>
+    <edges name="srcRef__type__srcType_eMoflonEdge" srcNode="//@rules.4/@nodes.0" trgNode="//@rules.4/@nodes.2">
+      <type href="platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmParameterizedTypeReference/type"/>
+    </edges>
+    <edges name="srcRef2__type__srcType_eMoflonEdge" bindingType="CREATE" srcNode="//@rules.4/@nodes.1" trgNode="//@rules.4/@nodes.2">
+      <type href="platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmParameterizedTypeReference/type"/>
+    </edges>
+    <edges name="trgRef__type__trgType_eMoflonEdge" domainType="TRG" srcNode="//@rules.4/@nodes.3" trgNode="//@rules.4/@nodes.5">
+      <type href="platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmParameterizedTypeReference/type"/>
+    </edges>
+    <edges name="trgRef2__type__trgType_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.4/@nodes.4" trgNode="//@rules.4/@nodes.5">
+      <type href="platform:/plugin/org.eclipse.xtext.common.types/model/JavaVMTypes.ecore#//JvmParameterizedTypeReference/type"/>
+    </edges>
+    <attributeConditionLibrary/>
+  </rules>
+  <rules name="SimpleClass2SimpleClassRule">
+    <nodes name="srcClass" bindingType="CREATE" incomingEdges="//@rules.5/@edges.0 //@rules.5/@edges.4" incomingCorrsSource="//@rules.5/@nodes.4">
+      <type href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleClass"/>
+    </nodes>
+    <nodes name="srcPackage" incomingEdges="//@rules.5/@edges.2" outgoingEdges="//@rules.5/@edges.4" incomingCorrsSource="//@rules.5/@nodes.5">
+      <type href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimplePackage"/>
+    </nodes>
+    <nodes name="trgClass" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.5/@edges.1 //@rules.5/@edges.5" incomingCorrsTarget="//@rules.5/@nodes.4">
+      <type href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleClass"/>
+    </nodes>
+    <nodes name="trgPackage" domainType="TRG" incomingEdges="//@rules.5/@edges.3" outgoingEdges="//@rules.5/@edges.5" incomingCorrsTarget="//@rules.5/@nodes.5">
+      <type href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimplePackage"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="SC2SC" domainType="CORR" bindingType="CREATE" outgoingEdges="//@rules.5/@edges.0 //@rules.5/@edges.1" source="//@rules.5/@nodes.0" target="//@rules.5/@nodes.2">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleClass2SimpleClass"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="SP2SP" domainType="CORR" outgoingEdges="//@rules.5/@edges.2 //@rules.5/@edges.3" source="//@rules.5/@nodes.1" target="//@rules.5/@nodes.3">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimplePackage2SimplePackage"/>
+    </nodes>
+    <edges name="SC2SC__source__srcClass_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.5/@nodes.4" trgNode="//@rules.5/@nodes.0">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleClass2SimpleClass/source"/>
+    </edges>
+    <edges name="SC2SC__target__trgClass_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.5/@nodes.4" trgNode="//@rules.5/@nodes.2">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleClass2SimpleClass/target"/>
+    </edges>
+    <edges name="SP2SP__source__srcPackage_eMoflonEdge" domainType="CORR" srcNode="//@rules.5/@nodes.5" trgNode="//@rules.5/@nodes.1">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimplePackage2SimplePackage/source"/>
+    </edges>
+    <edges name="SP2SP__target__trgPackage_eMoflonEdge" domainType="CORR" srcNode="//@rules.5/@nodes.5" trgNode="//@rules.5/@nodes.3">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimplePackage2SimplePackage/target"/>
+    </edges>
+    <edges name="srcPackage__simpleClasses__srcClass_eMoflonEdge" bindingType="CREATE" srcNode="//@rules.5/@nodes.1" trgNode="//@rules.5/@nodes.0">
+      <type href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimplePackage/simpleClasses"/>
+    </edges>
+    <edges name="trgPackage__simpleClasses__trgClass_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.5/@nodes.3" trgNode="//@rules.5/@nodes.2">
+      <type href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimplePackage/simpleClasses"/>
+    </edges>
+    <attributeConditionLibrary>
+      <tggAttributeConstraints definition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.0" parameters="//@rules.5/@attributeConditionLibrary/@parameterValues.0 //@rules.5/@attributeConditionLibrary/@parameterValues.1"/>
+      <parameterValues xsi:type="language:TGGAttributeExpression" parameterDefinition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.0/@parameterDefinitions.0" objectVar="//@rules.5/@nodes.0">
+        <attribute href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleClass/name"/>
+      </parameterValues>
+      <parameterValues xsi:type="language:TGGAttributeExpression" parameterDefinition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.0/@parameterDefinitions.1" objectVar="//@rules.5/@nodes.2">
+        <attribute href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleClass/name"/>
+      </parameterValues>
+    </attributeConditionLibrary>
+  </rules>
+  <rules name="SimpleField2SimpleFieldRule">
+    <nodes name="srcClass" incomingEdges="//@rules.6/@edges.0" outgoingEdges="//@rules.6/@edges.4" incomingCorrsSource="//@rules.6/@nodes.4">
+      <type href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleClass"/>
+    </nodes>
+    <nodes name="srcField" bindingType="CREATE" incomingEdges="//@rules.6/@edges.2 //@rules.6/@edges.4" incomingCorrsSource="//@rules.6/@nodes.5">
+      <type href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleField"/>
+    </nodes>
+    <nodes name="trgClass" domainType="TRG" incomingEdges="//@rules.6/@edges.1" outgoingEdges="//@rules.6/@edges.5" incomingCorrsTarget="//@rules.6/@nodes.4">
+      <type href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleClass"/>
+    </nodes>
+    <nodes name="trgField" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.6/@edges.3 //@rules.6/@edges.5" incomingCorrsTarget="//@rules.6/@nodes.5">
+      <type href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleField"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="SC2SC" domainType="CORR" outgoingEdges="//@rules.6/@edges.0 //@rules.6/@edges.1" source="//@rules.6/@nodes.0" target="//@rules.6/@nodes.2">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleClass2SimpleClass"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="SF2SF" domainType="CORR" bindingType="CREATE" outgoingEdges="//@rules.6/@edges.2 //@rules.6/@edges.3" source="//@rules.6/@nodes.1" target="//@rules.6/@nodes.3">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleField2SimpleField"/>
+    </nodes>
+    <edges name="SC2SC__source__srcClass_eMoflonEdge" domainType="CORR" srcNode="//@rules.6/@nodes.4" trgNode="//@rules.6/@nodes.0">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleClass2SimpleClass/source"/>
+    </edges>
+    <edges name="SC2SC__target__trgClass_eMoflonEdge" domainType="CORR" srcNode="//@rules.6/@nodes.4" trgNode="//@rules.6/@nodes.2">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleClass2SimpleClass/target"/>
+    </edges>
+    <edges name="SF2SF__source__srcField_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.6/@nodes.5" trgNode="//@rules.6/@nodes.1">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleField2SimpleField/source"/>
+    </edges>
+    <edges name="SF2SF__target__trgField_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.6/@nodes.5" trgNode="//@rules.6/@nodes.3">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleField2SimpleField/target"/>
+    </edges>
+    <edges name="srcClass__simpleFields__srcField_eMoflonEdge" bindingType="CREATE" srcNode="//@rules.6/@nodes.0" trgNode="//@rules.6/@nodes.1">
+      <type href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleClass/simpleFields"/>
+    </edges>
+    <edges name="trgClass__simpleFields__trgField_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.6/@nodes.2" trgNode="//@rules.6/@nodes.3">
+      <type href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleClass/simpleFields"/>
+    </edges>
+    <attributeConditionLibrary>
+      <tggAttributeConstraints definition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.1" parameters="//@rules.6/@attributeConditionLibrary/@parameterValues.0 //@rules.6/@attributeConditionLibrary/@parameterValues.1"/>
+      <tggAttributeConstraints definition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.1" parameters="//@rules.6/@attributeConditionLibrary/@parameterValues.2 //@rules.6/@attributeConditionLibrary/@parameterValues.3"/>
+      <tggAttributeConstraints definition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.0" parameters="//@rules.6/@attributeConditionLibrary/@parameterValues.4 //@rules.6/@attributeConditionLibrary/@parameterValues.5"/>
+      <tggAttributeConstraints definition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.0" parameters="//@rules.6/@attributeConditionLibrary/@parameterValues.6 //@rules.6/@attributeConditionLibrary/@parameterValues.7"/>
+      <parameterValues xsi:type="language:TGGAttributeExpression" parameterDefinition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.1/@parameterDefinitions.0" objectVar="//@rules.6/@nodes.1">
+        <attribute href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleField/isStatic"/>
+      </parameterValues>
+      <parameterValues xsi:type="language:TGGAttributeExpression" parameterDefinition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.1/@parameterDefinitions.1" objectVar="//@rules.6/@nodes.3">
+        <attribute href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleField/isStatic"/>
+      </parameterValues>
+      <parameterValues xsi:type="language:TGGAttributeExpression" parameterDefinition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.1/@parameterDefinitions.0" objectVar="//@rules.6/@nodes.1">
+        <attribute href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleField/isFinal"/>
+      </parameterValues>
+      <parameterValues xsi:type="language:TGGAttributeExpression" parameterDefinition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.1/@parameterDefinitions.1" objectVar="//@rules.6/@nodes.3">
+        <attribute href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleField/isFinal"/>
+      </parameterValues>
+      <parameterValues xsi:type="language:TGGAttributeExpression" parameterDefinition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.0/@parameterDefinitions.0" objectVar="//@rules.6/@nodes.1">
+        <attribute href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleField/accessType"/>
+      </parameterValues>
+      <parameterValues xsi:type="language:TGGAttributeExpression" parameterDefinition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.0/@parameterDefinitions.1" objectVar="//@rules.6/@nodes.3">
+        <attribute href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleField/accessType"/>
+      </parameterValues>
+      <parameterValues xsi:type="language:TGGAttributeExpression" parameterDefinition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.0/@parameterDefinitions.0" objectVar="//@rules.6/@nodes.1">
+        <attribute href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleField/name"/>
+      </parameterValues>
+      <parameterValues xsi:type="language:TGGAttributeExpression" parameterDefinition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.0/@parameterDefinitions.1" objectVar="//@rules.6/@nodes.3">
+        <attribute href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleField/name"/>
+      </parameterValues>
+    </attributeConditionLibrary>
+  </rules>
+  <rules name="SimpleMethod2SimpleMethodRule">
+    <nodes name="srcClass" incomingEdges="//@rules.7/@edges.0" outgoingEdges="//@rules.7/@edges.4" incomingCorrsSource="//@rules.7/@nodes.4">
+      <type href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleClass"/>
+    </nodes>
+    <nodes name="srcMethod" bindingType="CREATE" incomingEdges="//@rules.7/@edges.2 //@rules.7/@edges.4" incomingCorrsSource="//@rules.7/@nodes.5">
+      <type href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleMethod"/>
+    </nodes>
+    <nodes name="trgClass" domainType="TRG" incomingEdges="//@rules.7/@edges.1" outgoingEdges="//@rules.7/@edges.5" incomingCorrsTarget="//@rules.7/@nodes.4">
+      <type href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleClass"/>
+    </nodes>
+    <nodes name="trgMethod" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.7/@edges.3 //@rules.7/@edges.5" incomingCorrsTarget="//@rules.7/@nodes.5">
+      <type href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleMethod"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="SC2SC" domainType="CORR" outgoingEdges="//@rules.7/@edges.0 //@rules.7/@edges.1" source="//@rules.7/@nodes.0" target="//@rules.7/@nodes.2">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleClass2SimpleClass"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="SM2SM" domainType="CORR" bindingType="CREATE" outgoingEdges="//@rules.7/@edges.2 //@rules.7/@edges.3" source="//@rules.7/@nodes.1" target="//@rules.7/@nodes.3">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleMethod2SimpleMethod"/>
+    </nodes>
+    <edges name="SC2SC__source__srcClass_eMoflonEdge" domainType="CORR" srcNode="//@rules.7/@nodes.4" trgNode="//@rules.7/@nodes.0">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleClass2SimpleClass/source"/>
+    </edges>
+    <edges name="SC2SC__target__trgClass_eMoflonEdge" domainType="CORR" srcNode="//@rules.7/@nodes.4" trgNode="//@rules.7/@nodes.2">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleClass2SimpleClass/target"/>
+    </edges>
+    <edges name="SM2SM__source__srcMethod_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.7/@nodes.5" trgNode="//@rules.7/@nodes.1">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleMethod2SimpleMethod/source"/>
+    </edges>
+    <edges name="SM2SM__target__trgMethod_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.7/@nodes.5" trgNode="//@rules.7/@nodes.3">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleMethod2SimpleMethod/target"/>
+    </edges>
+    <edges name="srcClass__simpleMethods__srcMethod_eMoflonEdge" bindingType="CREATE" srcNode="//@rules.7/@nodes.0" trgNode="//@rules.7/@nodes.1">
+      <type href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleClass/simpleMethods"/>
+    </edges>
+    <edges name="trgClass__simpleMethods__trgMethod_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.7/@nodes.2" trgNode="//@rules.7/@nodes.3">
+      <type href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleClass/simpleMethods"/>
+    </edges>
+    <attributeConditionLibrary>
+      <tggAttributeConstraints definition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.0" parameters="//@rules.7/@attributeConditionLibrary/@parameterValues.0 //@rules.7/@attributeConditionLibrary/@parameterValues.1"/>
+      <tggAttributeConstraints definition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.0" parameters="//@rules.7/@attributeConditionLibrary/@parameterValues.2 //@rules.7/@attributeConditionLibrary/@parameterValues.3"/>
+      <parameterValues xsi:type="language:TGGAttributeExpression" parameterDefinition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.0/@parameterDefinitions.0" objectVar="//@rules.7/@nodes.1">
+        <attribute href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleMethod/accessType"/>
+      </parameterValues>
+      <parameterValues xsi:type="language:TGGAttributeExpression" parameterDefinition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.0/@parameterDefinitions.1" objectVar="//@rules.7/@nodes.3">
+        <attribute href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleMethod/accessType"/>
+      </parameterValues>
+      <parameterValues xsi:type="language:TGGAttributeExpression" parameterDefinition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.0/@parameterDefinitions.0" objectVar="//@rules.7/@nodes.1">
+        <attribute href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleMethod/name"/>
+      </parameterValues>
+      <parameterValues xsi:type="language:TGGAttributeExpression" parameterDefinition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.0/@parameterDefinitions.1" objectVar="//@rules.7/@nodes.3">
+        <attribute href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleMethod/name"/>
+      </parameterValues>
+    </attributeConditionLibrary>
+  </rules>
+  <rules name="SimplePackage2SimplePackageRule">
+    <nodes name="srcPackage" bindingType="CREATE" incomingEdges="//@rules.8/@edges.0" incomingCorrsSource="//@rules.8/@nodes.2">
+      <type href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimplePackage"/>
+    </nodes>
+    <nodes name="trgPackage" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.8/@edges.1" incomingCorrsTarget="//@rules.8/@nodes.2">
+      <type href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimplePackage"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="SP2SP" domainType="CORR" bindingType="CREATE" outgoingEdges="//@rules.8/@edges.0 //@rules.8/@edges.1" source="//@rules.8/@nodes.0" target="//@rules.8/@nodes.1">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimplePackage2SimplePackage"/>
+    </nodes>
+    <edges name="SP2SP__source__srcPackage_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.8/@nodes.2" trgNode="//@rules.8/@nodes.0">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimplePackage2SimplePackage/source"/>
+    </edges>
+    <edges name="SP2SP__target__trgPackage_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.8/@nodes.2" trgNode="//@rules.8/@nodes.1">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimplePackage2SimplePackage/target"/>
+    </edges>
+    <attributeConditionLibrary>
+      <tggAttributeConstraints definition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.0" parameters="//@rules.8/@attributeConditionLibrary/@parameterValues.0 //@rules.8/@attributeConditionLibrary/@parameterValues.1"/>
+      <parameterValues xsi:type="language:TGGAttributeExpression" parameterDefinition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.0/@parameterDefinitions.0" objectVar="//@rules.8/@nodes.0">
+        <attribute href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimplePackage/name"/>
+      </parameterValues>
+      <parameterValues xsi:type="language:TGGAttributeExpression" parameterDefinition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.0/@parameterDefinitions.1" objectVar="//@rules.8/@nodes.1">
+        <attribute href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimplePackage/name"/>
+      </parameterValues>
+    </attributeConditionLibrary>
+  </rules>
+  <rules name="SimpleParam2SimpleParamRule">
+    <nodes name="srcMethod" incomingEdges="//@rules.9/@edges.0" outgoingEdges="//@rules.9/@edges.4" incomingCorrsSource="//@rules.9/@nodes.4">
+      <type href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleMethod"/>
+    </nodes>
+    <nodes name="srcParam" bindingType="CREATE" incomingEdges="//@rules.9/@edges.2 //@rules.9/@edges.4" incomingCorrsSource="//@rules.9/@nodes.5">
+      <type href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleParam"/>
+    </nodes>
+    <nodes name="trgMethod" domainType="TRG" incomingEdges="//@rules.9/@edges.1" outgoingEdges="//@rules.9/@edges.5" incomingCorrsTarget="//@rules.9/@nodes.4">
+      <type href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleMethod"/>
+    </nodes>
+    <nodes name="trgParam" domainType="TRG" bindingType="CREATE" incomingEdges="//@rules.9/@edges.3 //@rules.9/@edges.5" incomingCorrsTarget="//@rules.9/@nodes.5">
+      <type href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleParam"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="SM2SM" domainType="CORR" outgoingEdges="//@rules.9/@edges.0 //@rules.9/@edges.1" source="//@rules.9/@nodes.0" target="//@rules.9/@nodes.2">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleMethod2SimpleMethod"/>
+    </nodes>
+    <nodes xsi:type="language:TGGRuleCorr" name="SPa2SPa" domainType="CORR" bindingType="CREATE" outgoingEdges="//@rules.9/@edges.2 //@rules.9/@edges.3" source="//@rules.9/@nodes.1" target="//@rules.9/@nodes.3">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleParam2SimpleParam"/>
+    </nodes>
+    <edges name="SM2SM__source__srcMethod_eMoflonEdge" domainType="CORR" srcNode="//@rules.9/@nodes.4" trgNode="//@rules.9/@nodes.0">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleMethod2SimpleMethod/source"/>
+    </edges>
+    <edges name="SM2SM__target__trgMethod_eMoflonEdge" domainType="CORR" srcNode="//@rules.9/@nodes.4" trgNode="//@rules.9/@nodes.2">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleMethod2SimpleMethod/target"/>
+    </edges>
+    <edges name="SPa2SPa__source__srcParam_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.9/@nodes.5" trgNode="//@rules.9/@nodes.1">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleParam2SimpleParam/source"/>
+    </edges>
+    <edges name="SPa2SPa__target__trgParam_eMoflonEdge" domainType="CORR" bindingType="CREATE" srcNode="//@rules.9/@nodes.5" trgNode="//@rules.9/@nodes.3">
+      <type href="platform:/resource/JavaExchange/model/JavaExchange.ecore#//SimpleParam2SimpleParam/target"/>
+    </edges>
+    <edges name="srcMethod__params__srcParam_eMoflonEdge" bindingType="CREATE" srcNode="//@rules.9/@nodes.0" trgNode="//@rules.9/@nodes.1">
+      <type href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleMethod/params"/>
+    </edges>
+    <edges name="trgMethod__params__trgParam_eMoflonEdge" domainType="TRG" bindingType="CREATE" srcNode="//@rules.9/@nodes.2" trgNode="//@rules.9/@nodes.3">
+      <type href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleMethod/params"/>
+    </edges>
+    <attributeConditionLibrary>
+      <tggAttributeConstraints definition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.0" parameters="//@rules.9/@attributeConditionLibrary/@parameterValues.0 //@rules.9/@attributeConditionLibrary/@parameterValues.1"/>
+      <parameterValues xsi:type="language:TGGAttributeExpression" parameterDefinition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.0/@parameterDefinitions.0" objectVar="//@rules.9/@nodes.1">
+        <attribute href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleParam/name"/>
+      </parameterValues>
+      <parameterValues xsi:type="language:TGGAttributeExpression" parameterDefinition="//@attributeConstraintDefinitionLibrary/@tggAttributeConstraintDefinitions.0/@parameterDefinitions.1" objectVar="//@rules.9/@nodes.3">
+        <attribute href="platform:/resource/org.xtext.simplejava/model/generated/SimpleJava.ecore#//SimpleParam/name"/>
+      </parameterValues>
+    </attributeConditionLibrary>
+  </rules>
+  <attributeConstraintDefinitionLibrary>
+    <tggAttributeConstraintDefinitions name="eq_string" userDefined="false">
+      <parameterDefinitions name="a">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </parameterDefinitions>
+      <parameterDefinitions name="b">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EString"/>
+      </parameterDefinitions>
+      <syncAdornments>
+        <value>B</value>
+        <value>B</value>
+      </syncAdornments>
+      <syncAdornments>
+        <value>B</value>
+        <value>F</value>
+      </syncAdornments>
+      <syncAdornments>
+        <value>F</value>
+        <value>B</value>
+      </syncAdornments>
+      <genAdornments>
+        <value>B</value>
+        <value>B</value>
+      </genAdornments>
+      <genAdornments>
+        <value>B</value>
+        <value>F</value>
+      </genAdornments>
+      <genAdornments>
+        <value>F</value>
+        <value>B</value>
+      </genAdornments>
+      <genAdornments>
+        <value>F</value>
+        <value>F</value>
+      </genAdornments>
+    </tggAttributeConstraintDefinitions>
+    <tggAttributeConstraintDefinitions name="eq_boolean" userDefined="false">
+      <parameterDefinitions name="a">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </parameterDefinitions>
+      <parameterDefinitions name="b">
+        <type href="http://www.eclipse.org/emf/2002/Ecore#//EBoolean"/>
+      </parameterDefinitions>
+      <syncAdornments>
+        <value>B</value>
+        <value>B</value>
+      </syncAdornments>
+      <syncAdornments>
+        <value>B</value>
+        <value>F</value>
+      </syncAdornments>
+      <syncAdornments>
+        <value>F</value>
+        <value>B</value>
+      </syncAdornments>
+      <genAdornments>
+        <value>B</value>
+        <value>B</value>
+      </genAdornments>
+      <genAdornments>
+        <value>B</value>
+        <value>F</value>
+      </genAdornments>
+      <genAdornments>
+        <value>F</value>
+        <value>B</value>
+      </genAdornments>
+      <genAdornments>
+        <value>F</value>
+        <value>F</value>
+      </genAdornments>
+    </tggAttributeConstraintDefinitions>
+  </attributeConstraintDefinitionLibrary>
+</language:TGG>
